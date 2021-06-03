@@ -1,13 +1,13 @@
 {
-  "name": "@vuepress/theme-blog",
-  "version": "2.3.3",
-  "description": "Default blog theme for VuePress",
+  "name": "vuepress-theme-ajwi",
+  "version": "1.0.0",
+  "description": "Another blog theme for VuePress",
   "repository": {
     "type": "git",
-    "url": "ulivz/vuepress-theme-blog"
+    "url": "aj-wi/aj-theme-blog_vuepress"
   },
   "license": "MIT",
-  "author": "ulivz<chl814@foxmail.com>",
+  "author": "aj-wi<ajwipo@gmail.com>",
   "files": [
     "index.js",
     "styles",
@@ -18,13 +18,9 @@
   ],
   "main": "index.js",
   "scripts": {
-    "docs:build": "vuepress build docs",
-    "docs:dev": "vuepress dev docs",
     "example:build": "vuepress build example --temp example/.temp",
     "example:dev": "vuepress dev example --temp example/.temp",
-    "lint": "eslint . --ext .js,.vue",
-    "prepublishOnly": "npm run test && npm run example:build && conventional-changelog -p angular -r 2 -i CHANGELOG.md -s",
-    "test": "jest"
+    "lint": "eslint . --ext .js,.vue"
   },
   "husky": {
     "hooks": {

@@ -1,41 +1,29 @@
-# @vuepress/theme-blog
-
-[![NPM version](https://badgen.net/npm/v/@vuepress/theme-blog)](https://npmjs.com/package/@vuepress/theme-blog) [![NPM downloads](https://badgen.net/npm/dm/@vuepress/theme-blog)](https://npmjs.com/package/@vuepress/theme-blog)
-[![NPM LICENSE](https://badgen.net/npm/license/@vuepress/theme-blog)](https://github.com/vuepressjs/vuepress-theme-blog/blob/master/LICENSE)
- 
-## Sites
-
-- [Documentation](https://vuepress-theme-blog.ulivz.com) - clone this repo and run `yarn && yarn docs:dev`
-- [Live Example](https://example.vuepress-theme-blog.ulivz.com/) - clone this repo and run `yarn && yarn example:dev`
-- [Live Example - ULIVZ's space](https://ulivz.com/)
-- [Live Example - Billyyyyy3320's space](https://billyyyyy3320.com/)
-
-
+# vuepress-theme-ajwi
 
 ## Install
 
 ```bash
-yarn add @vuepress/theme-blog -D
-# OR npm install @vuepress/theme-blog -D
+$ npm install vuepress-theme-ajwi --save-dev
+# or
+$ yarn add vuepress-theme-ajwi --dev
 ```
-
 
 ## Usage
 
 ```js
 // .vuepress/config.js
 module.exports = {
-  theme: '@vuepress/blog',
+  theme: 'ajwi',
   themeConfig: {
     // Please head documentation to see the available options.
-  }
+  },
 }
 ```
 
+## Development
+
+- **Live Example** - clone this repo and run `npm run example:dev`
+
 ## LICENSE
 
-**@vuepress/theme-blog** © [ULIVZ](https://github.com/ulivz) & [Billyyyyy3320](https://github.com/billyyyyy3320), Released under the [MIT](./LICENSE) License.<br>
-
-> [github.com/ulivz](https://github.com/ulivz) · GitHub [@ULIVZ](https://github.com/ulivz) · Twitter [@_ulivz](https://twitter.com/_ulivz)
-
-> [github.com/billyyyyy3320](https://github.com/billyyyyy3320) · GitHub [@Billyyyyy3320](https://github.com/billyyyyy3320) 
+**vuepress-theme-ajwi** © [AJ-Wi](https://github.com/AJ-Wi) , Released under the [MIT](./LICENSE) License.<br>
