@@ -1,11 +1,12 @@
 ---
 title: frontmatter in vuepress 1
 date: 2018-11-7
-tags: 
+image: /img/posts/post-5.jpg
+tags:
   - frontmatter
   - vuepress
 author: ULIVZ
-location: Hangzhou  
+location: Hangzhou
 ---
 
 Any markdown file that contains a YAML front matter block will be processed by [gray-matter](https://github.com/jonschlinkert/gray-matter). The front matter must be the first thing in the markdown file and must take the form of valid YAML set between triple-dashed lines. Here is a basic example:
@@ -48,7 +49,6 @@ title = "Blogging Like a Hacker"
 lang = "en-US"
 ---
 ```
-
 
 ## Predefined Variables
 
@@ -101,7 +101,7 @@ Override the default meta title.
 
 Specify extra meta tags to be injected:
 
-``` yaml
+```yaml
 ---
 meta:
   - name: description

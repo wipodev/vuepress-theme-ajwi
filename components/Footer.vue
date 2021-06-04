@@ -135,9 +135,14 @@ ol, ul
 
 .footer
   box-sizing border-box
-  background-color $footerBgColor
+  background-color $bgFooter
   padding 50px 0
   font-size .9rem
+  max-width 1400px
+  margin auto
+  position relative
+  z-index 10
+  border-top 1px solid $border
 
   .footer-left-wrap
     margin-bottom 10px
@@ -151,12 +156,12 @@ ol, ul
         margin-right 10px
 
         a
-          color $footerColor
+          color $textFooter
           text-decoration none
           transition color 0.3s
 
           &:hover
-            color #FFF
+            color $textColor
 
   .footer-right-wrap
 
@@ -164,7 +169,7 @@ ol, ul
 
       .copyright-item
         line-height 2
-        color $footerColor
+        color $textFooter
         text-align center
 
         a
@@ -173,5 +178,5 @@ ol, ul
           transition color 0.3s
 
           &:hover
-            color rgba(255, 255, 255, 0.9)
+            color rgba($textColor, 0.9)
 </style>

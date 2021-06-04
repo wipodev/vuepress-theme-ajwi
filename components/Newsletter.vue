@@ -34,7 +34,7 @@ export default {
 <style lang="stylus">
 .newsletter
   .newsletter &__wrap
-    background-color $newsletterBgColor
+    background-color $bgNewsletter
     max-width none
 
   .newsletter &__fields

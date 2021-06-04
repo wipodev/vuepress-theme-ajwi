@@ -2,6 +2,15 @@
   <section id="header-wrapper">
     <header id="header">
       <div class="header-wrapper">
+        <div class="logo">
+          <ImgLink
+            v-if="$themeConfig.logo"
+            link="/"
+            :img="$themeConfig.logo"
+            :alt="$site.title || 'AJ-Wi'"
+            class="logo-link"
+          />
+        </div>
         <div class="title">
           <NavLink link="/" class="home-link">{{ $site.title }} </NavLink>
         </div>
@@ -39,12 +48,15 @@ export default {
   z-index 12
   position fixed
   top 0
+  left 50%
+  transform translateX(-50%)
   width 100vw
+  max-width 1400px
   height $headerHeight
   box-sizing border-box
-  background-color $headerBgColor
+  background-color $bgHeader
   padding 20px 32px 20px
-  margin auto
+  border-bottom 1px solid $border
 
   ol, ul
     list-style none
@@ -56,8 +68,18 @@ export default {
   display flex
   line-height 40px
   height 40px
-  max-width: 1024px
+  max-width: 1170px
   margin: auto
+  align-items center
+
+  .logo
+    height $headerHeight
+    width 120px
+    margin-right 15px
+
+    .logo-link
+      img
+        height $headerHeight
 
   .title
     font-size 30px
@@ -65,6 +87,8 @@ export default {
     letter-spacing 2px
     display block
     text-transform uppercase
+    @media (max-width: $MQNarrow)
+      font-size 20px
 
     a
       color $textColor
@@ -101,8 +125,8 @@ export default {
         color $darkTextColor
 
         &:hover
-          border 1px solid $accentColor
-          box-shadow 0 0 5px $accentColor
+          border 1px solid $border
+          box-shadow 0 0 5px $primary
 
       .suggestions
         border 1px solid $darkBorderColor
@@ -114,7 +138,7 @@ export default {
           text-decoration none
 
           &.focused
-            color $accentColor
+            color $primary
 
 @media (min-width: $MQMobile)
   .nav-item > a:not(.external)
@@ -130,7 +154,7 @@ export default {
     right: 0
     opacity: 0
     cursor pointer
-    background: $primaryColor
+    background: $primary
 
   .nav-item > a:not(.external):hover
   .nav-item > a:not(.external).router-link-active

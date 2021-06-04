@@ -31,8 +31,9 @@ module.exports = {
     /**
      * Ref: https://vuepress-theme-blog.ulivz.com
      */
+    logo: '/img/logo.svg',
     cover: {
-      title: 'Bienvenidos a AJWi',
+      title: 'Bienvenidos a AJ-Wi',
       subTitle: 'el espacio donde aprendemos juntos',
       content:
         'Un Blog orientado al desarrollo web donde aprenderemos juntos las diversas tecnologias a nuestro alcance.',

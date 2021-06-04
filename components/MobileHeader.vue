@@ -51,8 +51,9 @@ export default {
   position fixed
   top 0
   width 100vw
+  height $headerHeight
   box-sizing border-box
-  background-color $headerBgColor
+  background-color $bgHeader
   margin auto
   box-shadow 0 5px 20px rgba(0, 0, 0, 0.03), 0 6px 6px rgba(0, 0, 0, 0.05)
   transition all 1s cubic-bezier(0.25, 0.8, 0.25, 1)
@@ -61,9 +62,11 @@ export default {
   .mobile-header-title
     display flex
     align-items center
+    box-sizing border-box
     justify-content space-between
     padding 1.2em
     width: 90%
+    height $headerHeight
     margin: auto
 
     .mobile-home-link
@@ -86,7 +89,7 @@ export default {
   max-height 0
   overflow hidden
   transition 0.3s ease
-  background-color $headerBgColor
+  background-color $bgHeader
 
 .mobile-menu-wrapper.open
   max-height 450px

@@ -1,42 +1,77 @@
 $fonts = Open Sans,Inter,Roboto,Oxygen,Fira Sans,Helvetica Neue,sans-serif
+// Primary color
+$primary = #ec5033//#7777ef//#ec5033
+$black = #000
+$gray = #828282
+$bg = #1b2025
+$bgComponents = #13171a
+$border = #2c343c
 
-$primaryColor = #ec5033
-$ligtColor = #fff
-$darkColor = #13171a
-$blackColor = #000
-$hoverColor = $primaryColor
-$postBorderColor = #2c343c
-$postBgColor = #1b2025
 
-//$bgImage = url('/img/pattern.svg')
+// Page
+$bgColor = $bg
+$textColor = #fff
+$darkTextColor = $bg
 
-// colors
-$accentColor = $primaryColor
+// Header
+$bgHeader = $bgComponents
 
-$textColor = $ligtColor
-$darkTextColor = $darkColor
+// Footer
+$bgFooter = $bgComponents
+$textFooter = $gray
 
-$borderColor = rgba(#828282,.05)
-$darkBorderColor = $darkTextColor
+// post
+$bgPosts = $bgComponents
+$borderPost = $border
+$bgPost = $bg
+$hoverPost = $primary
 
-$codeBgColor = $darkTextColor
+// Sidebar
+$bgSidebar = $bgComponents
 
-$bgColor = $darkColor
-$headerBgColor = $bgColor;
+// Suscribe
+$bgSuscribe = #242a31
 
-$footerBgColor = $darkTextColor
-$footerColor = #828282
+// Links
+$hoverLink = $primary
 
-$newsletterBgColor = #f8f8f8
+// Code 
+$bgCode = $black
 
-$postTagBgColor = #ededed;
-$postTagColor = darken($postTagBgColor,50%)
+// Buttom
+$buttomColor = $border
+$bgButtom = #343e47
+
+// Tag
+$borderTag = $border
+$hoverTag = $primary
+
+// NewsLetter
+$bgNewsletter = #f8f8f8
+
+// post Tag
+$bgPostTag = #ededed
+$textPostTag = darken($bgPostTag,50%)
+
+// Messages
+$bgTip = #f3f5f7
+$colorTip = $black
+$borderTip = #42b983
+$bgWarning = darken(#fffe6f, -50%)
+$colorWarning = #6b5900
+$borderWarnig = #e7c000
+$bgDanger = #ffe6e6
+$colorDanger = #4d0000
+$borderDanger = #c00
+$bgDetails = #f3f5f7
+$colorDetails = $black
 
 // layout
 $headerHeight = 80px
-$contentWidth = 100vw
-$coverHeight = 100vh
 $coverWidth = 100vw
+$suscribeContainer = 100vw
+$contentWidth = 100vw
+$sidebarWidth = 15rem
 
 // responsive breakpoints
 // $MQNarrow = 959px

@@ -2,7 +2,7 @@ const removeMd = require('remove-markdown')
 const path = require('path')
 const pick = require('lodash/pick')
 
-module.exports = themeConfig => {
+module.exports = (themeConfig) => {
   /**
    * Default theme configuration
    */
@@ -44,7 +44,7 @@ module.exports = themeConfig => {
       },
     ],
     globalPagination: {
-      lengthPerPage: 5,
+      lengthPerPage: 6,
     },
   }
 
@@ -101,6 +101,57 @@ module.exports = themeConfig => {
       },
     ],
     ['@vuepress/blog', blogPluginOptions],
+    [
+      'container',
+      {
+        type: 'tip',
+        defaultTitle: {
+          '/': 'TIP',
+          '/zh/': '提示',
+        },
+      },
+    ],
+    [
+      'container',
+      {
+        type: 'warning',
+        defaultTitle: {
+          '/': 'WARNING',
+          '/zh/': '注意',
+        },
+      },
+    ],
+    [
+      'container',
+      {
+        type: 'danger',
+        defaultTitle: {
+          '/': 'WARNING',
+          '/zh/': '警告',
+        },
+      },
+    ],
+    [
+      'container',
+      {
+        type: 'vue',
+        defaultTitle: {
+          '/': 'vue',
+          '/zh/': '警告',
+        },
+      },
+    ],
+    [
+      'container',
+      {
+        type: 'details',
+        before: (info) =>
+          `<details class="custom-block details">${
+            info ? `<summary>${info}</summary>` : ''
+          }\n`,
+        after: () => '</details>\n',
+      },
+    ],
     ['smooth-scroll', enableSmoothScroll],
   ]
 

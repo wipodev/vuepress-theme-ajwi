@@ -30,6 +30,7 @@ import { isExternal, isMailto, isTel, ensureExt } from '../components/util'
 export default {
   props: {
     link: {
+      type: String,
       required: true,
     },
   },
@@ -42,7 +43,7 @@ export default {
     exact() {
       if (this.$site.locales) {
         return Object.keys(this.$site.locales).some(
-          rootLink => rootLink === this.normalizedlink
+          (rootLink) => rootLink === this.normalizedlink
         )
       }
       return this.normalizedlink === '/'
@@ -59,9 +60,9 @@ export default {
 
 <style lang="stylus">
 .nav-link
-  color $darkTextColor
+  color $textColor
 
 .nav-link
   &:hover, &.router-link-active
-    color $accentColor
+    color $hoverLink
 </style>

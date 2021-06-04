@@ -45,13 +45,13 @@ export default {
   word-wrap break-word
 
 .content-wrapper
-  padding $headerHeight 0 80px 0
+  padding $headerHeight 0 0 0
   min-height calc(100vh - 80px - 60px - $headerHeight)
-  max-width $contentWidth
+  width $contentWidth
+  max-width 1400px
   margin 0 auto
 
   @media (max-width: $MQMobile)
     &
-      padding 100px 15px 20px 15px
       min-height calc(100vh - 20px - 60px - 100px)
 </style>

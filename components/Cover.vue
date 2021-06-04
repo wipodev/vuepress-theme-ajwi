@@ -24,11 +24,17 @@ export default {
 <style lang="stylus">
 .cover-container
   width $coverWidth
-  min-height $coverHeight
-  background-color $primaryColor
+  max-width 1400px
+  background-color $primary
   display flex
   justify-content center
-  margin-bottom 50px
+
+  @media (max-width: $MQMobile)
+    flex-wrap wrap
+    .cover-img
+    .cover-content
+      width 90%
+
 
 .cover-img
   width 40%
@@ -50,4 +56,24 @@ export default {
     margin-block-end 0
   h2
     border-bottom none
+
+
+  @media (max-width: $MQNarrow)
+    h1
+      font-size 3rem
+    h2
+      font-size 1rem
+
+  @media (max-width: $MQMobile)
+    margin-bottom 50px
+    h1
+      font-size 4rem
+    h2
+      font-size 1.65rem
+
+  @media (max-width: $MQMobileNarrow)
+    h1
+      font-size 3rem
+    h2
+      font-size 1rem
 </style>

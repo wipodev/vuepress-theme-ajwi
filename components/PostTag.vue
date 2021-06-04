@@ -26,7 +26,7 @@ export default {
     margin-right 10px
 
   a
-    background-color $postTagBgColor
+    background-color $bgPostTag
     border-radius 3px 0 0 3px
     padding 0 20px 0 23px
     position relative
@@ -35,7 +35,7 @@ export default {
     display inline-block
 
     span
-      color $postTagColor
+      color $textPostTag
       transition color 0.2s
 
     &:before
@@ -53,18 +53,18 @@ export default {
       position absolute
       right 0
       top 0
-      background $bgColor
+      background $bg
       border-bottom 13px solid transparent
-      border-left 10px solid $postTagBgColor
+      border-left 10px solid $bgPostTag
       border-top 13px solid transparent
       content ''
 
     &:hover
-      background-color $accentColor
+      background-color $primary
 
       &:after
-        border-left-color $accentColor
+        border-left-color $primary
 
       span
-        color #fff
+        color $textColor
 </style>

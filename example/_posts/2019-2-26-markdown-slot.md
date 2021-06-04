@@ -1,11 +1,12 @@
 ---
 title: Markdown Slot 1
 date: 2019-2-26
-tags: 
+image: /img/posts/post-10.jpg
+tags:
   - markdown
   - vuepress
 author: ULIVZ
-location: Hangzhou  
+location: Hangzhou
 ---
 
 VuePress implements a content distribution API for Markdown. With this feature, you can split your document into multiple fragments to facilitate flexible composition in the layout component.
@@ -26,7 +27,7 @@ Markdown Slot is to solve this kind of problem.
 
 You can define a named markdown slot through the following markdown syntax:
 
-``` md
+```md
 ::: slot name
 
 :::
@@ -34,8 +35,8 @@ You can define a named markdown slot through the following markdown syntax:
 
 Use the `Content` component to use the slot in the layout component:
 
-``` vue
-<Content slot-key="name"/>
+```vue
+<Content slot-key="name" />
 ```
 
 ::: tip
@@ -46,25 +47,25 @@ Here we are using `slot-key` instead of `slot`, because in Vue, `slot` is a rese
 
 By default, the slot-free part of a markdown file becomes the default content of a markdown slot, which you can access directly using the `Content` component:
 
-``` vue
-<Content/>
+```vue
+<Content />
 ```
 
 ## Example
 
 Suppose your layout component is as follows:
 
-``` vue
+```vue
 <template>
   <div class="container">
     <header>
-      <Content slot-key="header"/>
+      <Content slot-key="header" />
     </header>
     <main>
-      <Content/>
+      <Content />
     </main>
     <footer>
-      <Content slot-key="footer"/>
+      <Content slot-key="footer" />
     </footer>
   </div>
 </template>
@@ -74,7 +75,9 @@ If the markdown content of a page is like this:
 
 ```md
 ::: slot header
+
 # Here might be a page title
+
 :::
 
 - A Paragraph
@@ -111,5 +114,6 @@ Then the rendered HTML of this page will be:
 ```
 
 Note that:
+
 1. Unlike the slot mechanism provided by [Vue](https://vuejs.org/v2/guide/components-slots.html) itself, each content distribution is wrapped in a `div` whose class is `content` with the name of the slot.
 2. Please ensure the uniqueness of the slot defined.

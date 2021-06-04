@@ -1,17 +1,13 @@
 {
-  "name": "vuepress-theme-ajwi",
-  "version": "0.0.1",
-  "description": "blog theme for VuePress",
+  "name": "@vuepress/theme-blog",
+  "version": "2.3.3",
+  "description": "Default blog theme for VuePress",
   "repository": {
     "type": "git",
-    "url": "AJ-Wi/vuepress-theme-ajwi"
+    "url": "ulivz/vuepress-theme-blog"
   },
   "license": "MIT",
-  "author": "AJ-Wi <ajwipo@gmail.com>",
-  "bugs": {
-    "url": "https://github.com/aj-wi/aj-theme-blog_vuepress/issues"
-  },
-  "homepage": "https://ajwi.github.io/aj-theme-blog_vuepress",
+  "author": "ulivz<chl814@foxmail.com>",
   "files": [
     "index.js",
     "styles",
@@ -27,6 +23,7 @@
     "example:build": "vuepress build example --temp example/.temp",
     "example:dev": "vuepress dev example --temp example/.temp",
     "lint": "eslint . --ext .js,.vue",
+    "prepublishOnly": "npm run test && npm run example:build && conventional-changelog -p angular -r 2 -i CHANGELOG.md -s",
     "test": "jest"
   },
   "husky": {
@@ -53,6 +50,7 @@
     "dayjs": "^1.8.19",
     "remove-markdown": "^0.3.0",
     "vue-feather-icons": "^4.21.0",
+    "vuepress-plugin-container": "^2.0.2",
     "vuepress-plugin-smooth-scroll": "^0.0.9"
   },
   "devDependencies": {
@@ -71,5 +69,8 @@
   },
   "peerDependencies": {
     "vuepress": "^1.0.0"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   }
 }
