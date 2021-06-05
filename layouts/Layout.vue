@@ -1,9 +1,10 @@
 <template>
   <div>
-    <Cover />
-    <BaseLastPosts v-if="$pagination" />
+    <Cover v-if="$page.path === '/'" />
+    <BaseLastPosts v-if="$page.path === '/'" />
+    <BaseListPosts v-if="$page.path !== '/' && $pagination" />
     <Content v-else />
-    <Suscribe />
+    <Suscribe v-if="$page.path === '/'" />
   </div>
 </template>
 

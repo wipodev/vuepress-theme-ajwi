@@ -1,6 +1,7 @@
 <template>
   <div id="base-list-layout">
     <div class="ui-posts" itemscope itemtype="http://schema.org/Blog">
+      <h2 class="last-title">Posts</h2>
       <article
         v-for="page in pages"
         :key="page.key"
@@ -82,7 +83,6 @@
         </div>
       </article>
     </div>
-
     <component
       :is="paginationComponent"
       v-if="$pagination.length > 1 && paginationComponent"
@@ -160,9 +160,23 @@ export default {
   display flex
   flex-wrap wrap
   justify-content center
-  max-width 1170px
+  max-width 1400px
   margin-left auto
   margin-right auto
+  padding-left 10%
+  padding-right 10%
+  padding-bottom 5%
+  background-color $bgPosts
+
+  @media (max-width: $MQNarrow)
+    padding-left 3%
+    padding-right 3%
+
+  .last-title
+    width 100%
+    text-align center
+    font-size 2.8em
+    margin 1.25em 0 0.5em
 
 .ui-post
   max-width 33.3333%
@@ -174,15 +188,21 @@ export default {
     border-bottom 0px
     margin-bottom 0px
 
+  @media (max-width: $MQNarrow)
+    max-width 50%
+
+  @media (max-width: $MQMobile)
+    max-width 100%
+
 .card
   background-color $bgPost
-  border 1px solid $BorderPost
+  border 1px solid $borderPost
 
 .card-content
   padding 10px
 
 .ui-post-title
-  font-size 28px
+  font-size 1.33em
   border-bottom 0
 
   a

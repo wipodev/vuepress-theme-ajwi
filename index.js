@@ -9,7 +9,7 @@ module.exports = (themeConfig) => {
   themeConfig = Object.assign(themeConfig, {
     nav: themeConfig.nav || [
       {
-        text: 'Blog',
+        text: 'Home',
         link: '/',
       },
       {
@@ -44,7 +44,7 @@ module.exports = (themeConfig) => {
       },
     ],
     globalPagination: {
-      lengthPerPage: 6,
+      lengthPerPage: 10,
     },
   }
 
@@ -127,16 +127,6 @@ module.exports = (themeConfig) => {
         type: 'danger',
         defaultTitle: {
           '/': 'WARNING',
-          '/zh/': '警告',
-        },
-      },
-    ],
-    [
-      'container',
-      {
-        type: 'vue',
-        defaultTitle: {
-          '/': 'vue',
           '/zh/': '警告',
         },
       },

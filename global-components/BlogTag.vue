@@ -29,6 +29,7 @@ export default {
   border 1px solid $borderTag
   text-decoration none
   transition all 0.5s
+  //background-color blue
 
   &:hover
     color $hoverTag !important

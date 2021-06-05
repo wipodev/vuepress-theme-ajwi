@@ -13,20 +13,20 @@ module.exports = {
      * Ref: https://vuepress-theme-blog.ulivz.com/config/#nav
      */
 
-    // nav: [
-    //   {
-    //     text: 'Blog',
-    //     link: '/',
-    //   },
-    //   {
-    //     text: 'Tags',
-    //     link: '/tag/',
-    //   },
-    //   {
-    //     text: 'Location',
-    //     link: '/location/',
-    //   },
-    // ],
+    nav: [
+      {
+        text: 'Home',
+        link: '/',
+      },
+      {
+        text: 'Tags',
+        link: '/tag/',
+      },
+      {
+        text: 'About',
+        link: '/about/',
+      },
+    ],
 
     /**
      * Ref: https://vuepress-theme-blog.ulivz.com
@@ -120,37 +120,40 @@ module.exports = {
      * Ref: https://vuepress-theme-blog.ulivz.com/config/#directories
      */
 
-    // directories:[
-    //   {
-    //     id: 'post',
-    //     dirname: '_posts',
-    //     path: '/',
-    //     itemPermalink: '/:year/:month/:day/:slug',
-    //   },
-    //   {
-    //     id: 'writing',
-    //     dirname: '_writings',
-    //     path: '/',
-    //     itemPermalink: '/:year/:month/:day/:slug',
-    //   },
-    // ],
+    directories: [
+      {
+        id: 'post',
+        dirname: '_posts',
+        path: '/',
+        itemPermalink: '/:year/:month/:day/:slug',
+        pagination: {
+          lengthPerPage: 6,
+        },
+      },
+      {
+        id: 'writing',
+        dirname: '_writing',
+        path: '/',
+        itemPermalink: '/:year/:month/:day/:slug',
+      },
+    ],
 
     /**
      * Ref: https://vuepress-theme-blog.ulivz.com/config/#frontmatters
      */
 
-    // frontmatters: [
-    //   {
-    //     id: "tag",
-    //     keys: ['tag', 'tags'],
-    //     path: '/tag/',
-    //   },
-    //   {
-    //     id: "location",
-    //     keys: ['location'],
-    //     path: '/location/',
-    //   },
-    // ],
+    //frontmatters: [
+    //  {
+    //    id: 'tag',
+    //    keys: ['tag', 'tags'],
+    //    path: '/tag/',
+    //  },
+    //  {
+    //    id: 'location',
+    //    keys: ['location'],
+    //    path: '/location/',
+    //  },
+    //],
 
     /**
      * Ref: https://vuepress-theme-blog.ulivz.com/config/#globalpagination
