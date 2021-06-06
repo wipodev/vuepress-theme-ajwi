@@ -2,6 +2,7 @@
   <div id="base-list-layout">
     <div class="ui-posts" itemscope itemtype="http://schema.org/Blog">
       <h2 class="last-title">Posts</h2>
+      <BlogTags :tags="tags" />
       <article
         v-for="page in pages"
         :key="page.key"
@@ -73,7 +74,7 @@
                 <router-link
                   v-for="tag in resolvePostTags(page.frontmatter.tags)"
                   :key="tag"
-                  :to="'/tag/' + tag"
+                  :to="postsTag(tag)"
                 >
                   {{ tag }}
                 </router-link>
@@ -117,6 +118,9 @@ export default {
     pages() {
       return this.$pagination.pages
     },
+    tags() {
+      return this.$tag.list
+    },
   },
 
   created() {
@@ -137,6 +141,10 @@ export default {
       return Vue.component(n) || Pagination
     },
 
+    postsTag(tag) {
+      return this.$themeConfig.frontmatters[0].path + tag || `/posts/${tag}`
+    },
+
     resolvePostDate(date) {
       return dayjs
         .utc(date)
@@ -155,6 +163,10 @@ export default {
 .common-layout
   .content-wrapper
     padding-bottom 80px
+
+#base-list-layout
+  background-color $bgPosts
+  text-align center
 
 .ui-posts
   display flex
@@ -200,6 +212,7 @@ export default {
 
 .card-content
   padding 10px
+  text-align left
 
 .ui-post-title
   font-size 1.33em

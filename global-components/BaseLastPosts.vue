@@ -1,7 +1,7 @@
 <template>
-  <div id="base-list-layout">
+  <div id="base-last-layout">
     <div class="ui-posts" itemscope itemtype="http://schema.org/Blog">
-      <h2 class="last-title">Ultimos Posts</h2>
+      <h2 class="last-title">Últimos Posts</h2>
       <article
         v-for="page in pages"
         :key="page.key"
@@ -73,7 +73,7 @@
                 <router-link
                   v-for="tag in resolvePostTags(page.frontmatter.tags)"
                   :key="tag"
-                  :to="'/tag/' + tag"
+                  :to="postsTag(tag)"
                 >
                   {{ tag }}
                 </router-link>
@@ -109,6 +109,10 @@ export default {
       return dayjs
         .utc(date)
         .format(this.$themeConfig.dateFormat || 'ddd MMM DD YYYY')
+    },
+
+    postsTag(tag) {
+      return this.$themeConfig.frontmatters[0].path + tag || `/posts/${tag}`
     },
 
     resolvePostTags(tags) {

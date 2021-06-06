@@ -19,3 +19,10 @@ export default {
   },
 }
 </script>
+
+<style lang="stylus">
+.content__default
+  padding 15px
+  border-right 1px solid $border
+  border-left 1px solid $border
+</style>

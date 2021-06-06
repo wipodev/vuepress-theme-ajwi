@@ -19,8 +19,8 @@ module.exports = {
         link: '/',
       },
       {
-        text: 'Tags',
-        link: '/tag/',
+        text: 'Posts',
+        link: '/posts/all/',
       },
       {
         text: 'About',
@@ -130,30 +130,30 @@ module.exports = {
           lengthPerPage: 6,
         },
       },
-      {
-        id: 'writing',
-        dirname: '_writing',
-        path: '/',
-        itemPermalink: '/:year/:month/:day/:slug',
-      },
+      //{
+      //  id: 'writing',
+      //  dirname: '_writing',
+      //  path: '/',
+      //  itemPermalink: '/:year/:month/:day/:slug',
+      //},
     ],
 
     /**
      * Ref: https://vuepress-theme-blog.ulivz.com/config/#frontmatters
      */
 
-    //frontmatters: [
-    //  {
-    //    id: 'tag',
-    //    keys: ['tag', 'tags'],
-    //    path: '/tag/',
-    //  },
-    //  {
-    //    id: 'location',
-    //    keys: ['location'],
-    //    path: '/location/',
-    //  },
-    //],
+    frontmatters: [
+      {
+        id: 'tag',
+        keys: ['tag', 'tags'],
+        path: '/posts/',
+      },
+      //  {
+      //    id: 'location',
+      //    keys: ['location'],
+      //    path: '/location/',
+      //  },
+    ],
 
     /**
      * Ref: https://vuepress-theme-blog.ulivz.com/config/#globalpagination

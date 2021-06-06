@@ -6,14 +6,21 @@
 
 <script>
 export default {
-  props: ['tags'],
+  props: {
+    tags: {
+      type: Array,
+      default: () => [],
+    },
+  },
 }
 </script>
 
 <style lang="stylus">
 .blog-tags
-  width 66%
-  background-color red
+  //display flex
+  width 100%
+  padding 15px
+  //background-color red
 
 @media screen and (max-width: 1000px)
   .blog-tags

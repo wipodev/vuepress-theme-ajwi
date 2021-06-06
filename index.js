@@ -13,8 +13,8 @@ module.exports = (themeConfig) => {
         link: '/',
       },
       {
-        text: 'Tags',
-        link: '/tag/',
+        text: 'Posts',
+        link: '/posts/',
       },
     ],
     summary: themeConfig.summary === undefined ? true : themeConfig.summary,
@@ -40,11 +40,11 @@ module.exports = (themeConfig) => {
       {
         id: 'tag',
         keys: ['tags'],
-        path: '/tag/',
+        path: '/posts/',
       },
     ],
     globalPagination: {
-      lengthPerPage: 10,
+      lengthPerPage: 9,
     },
   }
 

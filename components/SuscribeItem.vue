@@ -1,7 +1,7 @@
 <template>
   <div class="suscribe-item">
     <img :src="img" :alt="title" />
-    <h3>{{ title }}</h3>
+    <h3 class="suscribe-title">{{ title }}</h3>
     <BaseButtom :url="route" />
   </div>
 </template>
@@ -40,6 +40,9 @@ export default {
     font-size 2rem
     font-weight 800
     color $primary
+
+  .suscribe-title
+    border none
 
   @media (max-width: $MQNarrow)
     width 50%

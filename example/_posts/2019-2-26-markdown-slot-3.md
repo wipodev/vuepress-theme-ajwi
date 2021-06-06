@@ -3,6 +3,7 @@ title: Markdown Slot 3
 date: 2019-2-26
 image: /img/posts/post-5.jpg
 tags:
+  - all
   - markdown
   - vuepress
 author: ULIVZ

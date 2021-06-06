@@ -3,6 +3,7 @@ title: frontmatter in vuepress 3
 date: 2018-11-7
 image: /img/posts/post-5.jpg
 tags:
+  - all
   - frontmatter
   - vuepress
 author: ULIVZ

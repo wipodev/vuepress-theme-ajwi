@@ -6,7 +6,11 @@
 
 <script>
 export default {
-  props: ['tag'],
+  props: {
+    tag: {
+      type: Array,
+    },
+  },
 }
 </script>
 

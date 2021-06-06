@@ -1,6 +1,6 @@
 <template>
   <li class="post-tag">
-    <router-link :to="'/tag/' + tag">
+    <router-link :to="postsTag(tag)">
       <span>{{ tag }}</span>
     </router-link>
   </li>
@@ -13,6 +13,11 @@ export default {
     tag: {
       type: String,
       required: true,
+    },
+  },
+  methods: {
+    postsTag(tag) {
+      return this.$themeConfig.frontmatters[0].path + tag || `/posts/${tag}`
     },
   },
 }

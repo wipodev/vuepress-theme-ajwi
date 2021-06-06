@@ -3,6 +3,7 @@ title: writing a vuepress theme 3
 date: 2019-5-6
 image: /img/posts/post-6.jpg
 tags:
+  - all
   - theme
   - blog
   - vuepress

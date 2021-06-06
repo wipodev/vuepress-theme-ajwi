@@ -1,7 +1,16 @@
 {
   "name": "vuepress-theme-ajwi",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Another blog theme for VuePress",
+  "keywords": [
+    "vue",
+    "vuepress",
+    "blog",
+    "vuepress-theme",
+    "vuepress-blog",
+    "vuepress-theme-blog",
+    "vuepress-theme-ajwi"
+  ],
   "repository": {
     "type": "git",
     "url": "aj-wi/aj-theme-blog_vuepress"

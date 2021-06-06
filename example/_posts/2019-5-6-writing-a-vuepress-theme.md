@@ -3,6 +3,7 @@ title: Writing a vuepress theme 1
 date: 2019-5-6
 image: /img/posts/post-8.jpg
 tags:
+  - all
   - theme
   - blog
   - vuepress
