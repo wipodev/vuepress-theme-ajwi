@@ -39,6 +39,20 @@ module.exports = {
         'Un Blog orientado al desarrollo web donde aprenderemos juntos las diversas tecnologias a nuestro alcance.',
       img: '/img/cover-img.png',
     },
+    suscribe: {
+      item1: {
+        img: '/img/spotify.svg',
+        route: 'http://spotify.com',
+      },
+      item2: {
+        img: '/img/tiktok.svg',
+        route: 'http://tiktok.com',
+      },
+      item3: {
+        img: '/img/youtube.svg',
+        route: 'http://youtube.com',
+      },
+    },
 
     /**
      * Ref: https://vuepress-theme-blog.ulivz.com/config/#footer

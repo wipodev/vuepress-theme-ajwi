@@ -35,6 +35,9 @@ export default {
   width 25%
   margin-bottom 2em
 
+  img
+    width 50%
+
   h3
     margin 0.5rem 0 2rem 0
     font-size 2rem

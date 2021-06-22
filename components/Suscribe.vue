@@ -2,9 +2,12 @@
   <div class="suscribe-container">
     <h2>Suscribete</h2>
     <div class="suscribe-items">
-      <SuscribeItem img="/img/spotify.svg" route="http://spotify.com" />
-      <SuscribeItem img="/img/spotify.svg" route="http://spotify.com" />
-      <SuscribeItem img="/img/spotify.svg" route="http://spotify.com" />
+      <SuscribeItem
+        v-for="item in suscribe"
+        :key="item.img"
+        :img="item.img"
+        :route="item.route"
+      />
     </div>
   </div>
 </template>
@@ -17,8 +20,8 @@ export default {
     SuscribeItem,
   },
   computed: {
-    cover() {
-      return this.$themeConfig.cover || []
+    suscribe() {
+      return this.$themeConfig.suscribe || []
     },
   },
 }
