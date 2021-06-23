@@ -1,53 +1,55 @@
 module.exports = {
-  title: 'VuePress Blog Example',
+  title: 'Blog Example',
   description: 'This is a blog example built by VuePress',
   theme: require.resolve('../../'),
   themeConfig: {
-
     /**
      * Ref: https://vuepress-theme-blog.ulivz.com/config/#nav
      */
 
-    nav: [
-      {
-        text: 'Home',
-        link: '/',
-      },
-      {
-        text: 'Posts',
-        link: '/posts/all/',
-      },
-      {
-        text: 'About',
-        link: '/about/',
-      },
-    ],
+    //nav: [
+    //  {
+    //    text: 'Home',
+    //    link: '/',
+    //  },
+    //  {
+    //    text: 'Posts',
+    //    link: '/posts/all/',
+    //  },
+    //  {
+    //    text: 'About',
+    //    link: '/about/',
+    //  },
+    //],
 
     /**
      * Ref: https://vuepress-theme-blog.ulivz.com
      */
-    logo: '/img/logo.svg',
-    cover: {
-      title: 'Bienvenidos a AJ-Wi',
-      subTitle: 'el espacio donde aprendemos juntos',
-      content:
-        'Un Blog orientado al desarrollo web donde aprenderemos juntos las diversas tecnologías a nuestro alcance.',
-      img: '/img/cover-img.png',
-    },
-    suscribe: {
-      item1: {
-        img: '/img/spotify.svg',
-        route: 'http://spotify.com',
-      },
-      item2: {
-        img: '/img/tiktok.svg',
-        route: 'http://tiktok.com',
-      },
-      item3: {
-        img: '/img/youtube.svg',
-        route: 'http://youtube.com',
-      },
-    },
+    //logo: '/img/logo.svg',
+    //cover: {
+    //  title: 'Bienvenidos a AJ-Wi',
+    //  subTitle: 'el espacio donde aprendemos juntos',
+    //  content:
+    //    'Un Blog orientado al desarrollo web donde aprenderemos juntos las diversas tecnologías a nuestro alcance.',
+    //  img: '/img/cover-img.png',
+    //},
+    /**
+     * Ref: https://vuepress-theme-blog.ulivz.com
+     */
+    //suscribe: {
+    //  item1: {
+    //    img: '/img/spotify.svg',
+    //    route: 'http://spotify.com',
+    //  },
+    //  item2: {
+    //    img: '/img/tiktok.svg',
+    //    route: 'http://tiktok.com',
+    //  },
+    //  item3: {
+    //    img: '/img/youtube.svg',
+    //    route: 'http://youtube.com',
+    //  },
+    //},
 
     /**
      * Ref: https://vuepress-theme-blog.ulivz.com/config/#footer
@@ -68,7 +70,7 @@ module.exports = {
         },
         {
           type: 'github',
-          link: 'https://github.com/vuepressjs/vuepress-theme-blog',
+          link: 'https://github.com/ajwi',
         },
         {
           type: 'gitlab',
@@ -100,7 +102,7 @@ module.exports = {
         },
         {
           type: 'twitter',
-          link: 'https://twitter.com/vuepressjs',
+          link: '/',
         },
         {
           type: 'video',
@@ -129,47 +131,47 @@ module.exports = {
      * Ref: https://vuepress-theme-blog.ulivz.com/config/#directories
      */
 
-    directories: [
-      {
-        id: 'post',
-        dirname: '_posts',
-        path: '/',
-        itemPermalink: '/:year/:month/:day/:slug',
-        pagination: {
-          lengthPerPage: 6,
-        },
-      },
-      //{
-      //  id: 'writing',
-      //  dirname: '_writing',
-      //  path: '/',
-      //  itemPermalink: '/:year/:month/:day/:slug',
-      //},
-    ],
+    //directories: [
+    //  {
+    //    id: 'post',
+    //    dirname: '_posts',
+    //    path: '/',
+    //    itemPermalink: '/:year/:month/:day/:slug',
+    //    pagination: {
+    //      lengthPerPage: 6,
+    //    },
+    //  },
+    //{
+    //  id: 'writing',
+    //  dirname: '_writing',
+    //  path: '/',
+    //  itemPermalink: '/:year/:month/:day/:slug',
+    //},
+    //],
 
     /**
      * Ref: https://vuepress-theme-blog.ulivz.com/config/#frontmatters
      */
 
-    frontmatters: [
-      {
-        id: 'tag',
-        keys: ['tag', 'tags'],
-        path: '/posts/',
-      },
-      //  {
-      //    id: 'location',
-      //    keys: ['location'],
-      //    path: '/location/',
-      //  },
-    ],
+    //frontmatters: [
+    //  {
+    //    id: 'tag',
+    //    keys: ['tag', 'tags'],
+    //    path: '/posts/',
+    //  },
+    //  {
+    //    id: 'location',
+    //    keys: ['location'],
+    //    path: '/location/',
+    //  },
+    //],
 
     /**
      * Ref: https://vuepress-theme-blog.ulivz.com/config/#globalpagination
      */
 
     // globalPagination: {
-    //   lengthPerPage: 10,
+    //   lengthPerPage: 9,
     // },
 
     /**

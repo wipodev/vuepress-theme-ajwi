@@ -1,8 +1,9 @@
 <template>
   <div id="base-list-layout">
     <div class="ui-posts" itemscope itemtype="http://schema.org/Blog">
-      <h2 class="last-title">Posts</h2>
-      <BlogTags :tags="tags" />
+      <h2 v-if="$page.path !== '/'" class="last-title">Posts</h2>
+      <h2 v-else class="last-title">Últimos Posts</h2>
+      <BlogTags v-if="$page.path !== '/'" :tags="tags" />
       <article
         v-for="page in pages"
         :key="page.key"
@@ -86,7 +87,7 @@
     </div>
     <component
       :is="paginationComponent"
-      v-if="$pagination.length > 1 && paginationComponent"
+      v-if="$page.path !== '/' && $pagination.length > 1 && paginationComponent"
     ></component>
   </div>
 </template>

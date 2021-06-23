@@ -8,7 +8,7 @@
 export default {
   props: {
     tag: {
-      type: Array,
+      type: Object,
     },
   },
 }
