@@ -3,11 +3,6 @@ module.exports = {
   description: 'This is a blog example built by VuePress',
   theme: require.resolve('../../'),
   themeConfig: {
-    /**
-     * Ref: https://vuepress-theme-blog.ulivz.com/config/#dateformat
-     */
-
-    // dateFormat: 'YYYY-MM-DD',
 
     /**
      * Ref: https://vuepress-theme-blog.ulivz.com/config/#nav
@@ -36,7 +31,7 @@ module.exports = {
       title: 'Bienvenidos a AJ-Wi',
       subTitle: 'el espacio donde aprendemos juntos',
       content:
-        'Un Blog orientado al desarrollo web donde aprenderemos juntos las diversas tecnologias a nuestro alcance.',
+        'Un Blog orientado al desarrollo web donde aprenderemos juntos las diversas tecnologías a nuestro alcance.',
       img: '/img/cover-img.png',
     },
     suscribe: {
@@ -126,7 +121,7 @@ module.exports = {
           link: 'https://policies.google.com/privacy?hl=en-US',
         },
         {
-          text: 'MIT Licensed | Copyright © 2018-present Vue.js',
+          text: 'MIT Licensed | Copyright © 2018-present AJ-Wi',
         },
       ],
     },

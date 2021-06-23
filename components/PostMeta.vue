@@ -24,12 +24,8 @@
 </template>
 
 <script>
-import dayjs from 'dayjs'
-import dayjsPluginUTC from 'dayjs/plugin/utc'
 import { NavigationIcon, ClockIcon } from 'vue-feather-icons'
 import PostTag from './PostTag.vue'
-
-dayjs.extend(dayjsPluginUTC)
 
 export default {
   name: 'PostMeta',
@@ -50,9 +46,16 @@ export default {
   },
   computed: {
     resolvedDate() {
-      return dayjs
-        .utc(this.date)
-        .format(this.$themeConfig.dateFormat || 'ddd MMM DD YYYY')
+      let formatDate = new Date(this.date.trim()).toLocaleDateString(
+        undefined,
+        {
+          weekday: 'long',
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric',
+        }
+      )
+      return formatDate
     },
     resolvedTags() {
       if (!this.tags || Array.isArray(this.tags)) return this.tags

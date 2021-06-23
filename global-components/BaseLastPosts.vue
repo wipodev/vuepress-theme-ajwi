@@ -46,7 +46,7 @@
                 <NavigationIcon />
                 <span itemprop="name">{{ page.frontmatter.author }}</span>
                 <span v-if="page.frontmatter.location" itemprop="address">
-                  &nbsp; in {{ page.frontmatter.location }}
+                  &nbsp; en {{ page.frontmatter.location }}
                 </span>
               </div>
 
@@ -89,11 +89,7 @@
 <script>
 /* global THEME_BLOG_PAGINATION_COMPONENT */
 
-import dayjs from 'dayjs'
-import dayjsPluginUTC from 'dayjs/plugin/utc'
 import { NavigationIcon, ClockIcon, TagIcon } from 'vue-feather-icons'
-
-dayjs.extend(dayjsPluginUTC)
 
 export default {
   components: { NavigationIcon, ClockIcon, TagIcon },
@@ -106,9 +102,13 @@ export default {
 
   methods: {
     resolvePostDate(date) {
-      return dayjs
-        .utc(date)
-        .format(this.$themeConfig.dateFormat || 'ddd MMM DD YYYY')
+      let formatDate = new Date(date.trim()).toLocaleDateString(undefined, {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+      })
+      return formatDate
     },
 
     postsTag(tag) {

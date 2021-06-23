@@ -12,7 +12,14 @@
 <script>
 import { findContainerInVm } from './util'
 export default {
-  props: ['stick', 'tag'],
+  props: {
+    stick: {
+      type: String,
+    },
+    tag: {
+      type: String,
+    },
+  },
 
   data() {
     return {

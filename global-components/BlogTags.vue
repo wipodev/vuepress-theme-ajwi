@@ -17,10 +17,8 @@ export default {
 
 <style lang="stylus">
 .blog-tags
-  //display flex
   width 100%
   padding 15px
-  //background-color red
 
 @media screen and (max-width: 1000px)
   .blog-tags
