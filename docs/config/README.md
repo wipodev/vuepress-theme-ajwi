@@ -1,22 +1,23 @@
 ---
 prev: /
 ---
+
 # Opciones
 
-## formato de fecha (dateFormat)
+## Logo
 
 - Tipo: `string`
-- Predeterminado: `'ddd MMM DD YYYY'`
+- Predeterminado: `indefinido`
 
-La [fecha](./front-matter.md#fecha) se mostrará en el diseño con este formato. Puede encontrar todos los formatos disponibles [aquí](https://github.com/iamkun/dayjs/blob/dev/docs/en/API-reference.md#displaying)
+El logo se mostrara en la parte izquierda del header de la pagina, puede agregar una imagen a mostrar en `.vuepress/config.js`
 
 por ejemplo:
 
 ```js
 module.exports = {
   themeConfig: {
-    dateFormat: 'YYYY-MM-DD'
-  }
+    logo: '/img/tuimagen.svg',
+  },
 }
 ```
 
@@ -41,8 +42,88 @@ module.exports = {
         text: 'Posts',
         link: '/posts/',
       },
-    ]
+    ],
   },
+}
+```
+
+## Banner principal (Cover)
+
+- Tipo: `object`
+- Predeterminado: `Vea abajo`
+
+Esta sección se encuentra en la página de inicio justo de bajo del header.
+
+```JavaScript
+  {
+    title: 'Bienvenidos a mi Blog',
+    subTitle: 'el Blog que estabas buscando',
+    content: 'Un Blog donde encontraras las diversas tecnologías a nuestro alcance.',
+    img: '/img/cover-img.png'
+  }
+```
+
+Puedes modificar los textos e imagen que aparecen hay en el archivo `.vuepress/config.js`.
+
+por ejemplo:
+
+```JavaScript
+module.exports = {
+  themeConfig: {
+    cover: {
+      title: 'Tu Titulo',
+      subTitle: 'Tu subtitulo',
+      content: 'Tu descripción',
+      img: 'tuimagen.png'
+    }
+  }
+}
+```
+
+## Suscribete (suscribe)
+
+- Tipo: `object`
+- Predeterminado: `Vea abajo`
+
+Esta sección se encuentra antes del pie de página.
+
+```JavaScript
+  {
+    item1: {
+      img: '/img/spotify.svg',
+      route: 'http://spotify.com',
+    },
+    item2: {
+      img: '/img/tiktok.svg',
+      route: 'http://tiktok.com',
+    },
+    item3: {
+      img: '/img/youtube.svg',
+      route: 'http://youtube.com',
+    },
+  }
+```
+
+Puedes modificar los enlaces en el archivo `.vuepress/config.js`.
+
+```JavaScript
+module.exports = {
+  themeConfig: {
+    suscribe: {
+      item1: {
+        img: 'tuimagen.svg',
+        route: 'http://tudominio.com',
+      },
+      item2: {
+        img: 'tuimagen.svg',
+        route: 'http://tudominio.com',
+      },
+      item3: {
+        img: 'tuimagen.svg',
+        route: 'http://tudominio.com',
+      },
+    }
+  }
 }
 ```
 
@@ -94,7 +175,6 @@ Por ahora `ContactType` admite los siguientes tipos:
 - web
 - youtube
 
-
 ### footer.copyright
 
 - Tipo: `Array<{ text: string, link?: string }>`
@@ -133,9 +213,14 @@ module.exports = {
     id: 'post',
     dirname: '_posts',
     path: '/',
+    itemPermalink: '/:year/:month/:day/:slug',
+    pagination: {
+      lengthPerPage: 6,
+    },
   },
 ]
 ```
+
 De forma predeterminada, las páginas se colocan en `_post` y la ruta de la lista de publicaciones es `/`. Aquí hay un ejemplo si desea personalizarlo:
 
 ```JavaScript
@@ -159,6 +244,7 @@ De forma predeterminada, las páginas se colocan en `_post` y la ruta de la list
 ```
 
 Referencia:
+
 - [clasificadores de documentos](https://vuepress-plugin-blog.ulivz.com/guide/getting-started.html#document-classifier)
 
 ## frontmatters
@@ -189,19 +275,22 @@ Solo se clasificará por `tag` y `tags` en el frontmatter, y la ruta para ello e
     scopeLayout: 'ScopeLocation', // Nombre del componente de diseño para la página de alcance.
     frontmatter: { //Frontmatter para la pagina.
       description: 'Hola'
-    }, 
+    },
     pagination: { // Comportamiento de paginación
       lengthPerPage: 2,
-    }, 
+    },
   },
 ]
 ```
+
 Referencia:
+
 - [Clasificador de Frontmatter](https://vuepress-plugin-blog.ulivz.com/guide/getting-started.html#frontmatter-classifier)
+
 ## Paginacion Global (globalPagination)
 
 - Tipo: `object`
-- Predeterminado: `{ lengthPerPage: 5 }`
+- Predeterminado: `{ lengthPerPage: 9 }`
 
 Configuración de paginación para todos los directorios y frontmatters. Por ejemplo:
 
@@ -215,6 +304,7 @@ Configuración de paginación para todos los directorios y frontmatters. Por eje
 ```
 
 Para obtener más información, visite [Configuración de Paginacion](https://vuepress-plugin-blog.ulivz.com/pagination/#sorter).
+
 ## Mapa del Sitio (sitemap)
 
 - Tipo: `object`
@@ -229,7 +319,6 @@ Simplemente puede habilitarlo completando la propiedad `hostname` con su nombre 
 ```
 
 Por favor, diríjase a [vuepress-plugin-sitemap](https://github.com/ekoeryanto/vuepress-plugin-sitemap#options) para más detalles.
-
 
 ## Comentarios (comment)
 
@@ -249,18 +338,20 @@ Vssue y Disqus son servicios de comentarios integrados. Estas son las propiedade
 {
   service: 'vssue',
   owner: 'Tu',
-  repo: 'Tu repositorio', 
+  repo: 'Tu repositorio',
   clientId: 'Tu ID de cliente',
   clientSecret: 'Tu clientSecret',
 }
 ```
+
 Para configurar el nombre corto de disqus, visite [aquí](https://help.disqus.com/en/articles/1717111-what-s-a-shortname)
 
 Más configuración, visite:
+
 - [vuepress-plugin-disqus-comment](https://vuepress-plugin-disqus.netlify.com/#usage)
 - [vuepress-plugin-vssue](https://vssue.js.org/guide/vuepress.html#usage)
 
-## Boletin informativo (newsletter)
+## Boletín informativo (newsletter)
 
 - Tipo: `object`
 - Predeterminado: `indefinido`
@@ -275,7 +366,6 @@ Mailchimp es nuestro servicio de boletín de noticias predeterminado. La única 
 
 Por favor, diríjase a [vuepress-plugin-mailchimp](https://vuepress-plugin-mailchimp.billyyyyy3320.com/#config) para ver cómo obtener su `endpoint`.
 
-
 ## feed
 
 - Tipo: `object`
@@ -288,6 +378,7 @@ Se admiten feeds RSS, Atom e incluso JSON. La única propiedad necesaria para ha
   canonical_base:'http://tusitio',
 },
 ```
+
 RSS es el tipo de feed predeterminado.
 
 Todas las opciones en [vuepress-plugin-feed](https://github.com/webmasterish/vuepress-plugin-feed#options) están disponibles.
@@ -310,9 +401,8 @@ Si planea implementar su sitio bajo una ruta secundaria y ha configurado la [bas
 
 - Tipo: `boolean`
 - Predeterminado: `true`
- 
-Ya sea para extraer automáticamente el resumen de los archivos markdowns. Puede escribir un resumen de forma manual en la sección de [frontmatter](./front-matter.md#resumen) de la publicación . El resumen no es solo para mostrar, sino también para la descripción de la página.
 
+Ya sea para extraer automáticamente el resumen de los archivos markdowns. Puede escribir un resumen de forma manual en la sección de [frontmatter](./front-matter.md#resumen) de la publicación . El resumen no es solo para mostrar, sino también para la descripción de la página.
 
 ## Longitud del resumen (summaryLength)
 
@@ -320,7 +410,6 @@ Ya sea para extraer automáticamente el resumen de los archivos markdowns. Puede
 - Predeterminado: `200`
 
 Establece la duración del resumen.
-
 
 ## pwa
 
@@ -346,7 +435,7 @@ si habilita esta opción, las opciones predeterminadas del complemento PWA inter
 
 Personalice el componente de paginación.
 
-El predeterminado es el 
+El predeterminado es el
 [componente de paginación](https://vuepress-plugin-blog.ulivz.com/components/#pagination)
 
 <img src="../assets/pagination.png" width="250" height="" style=""/>

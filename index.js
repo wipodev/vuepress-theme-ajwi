@@ -17,6 +17,27 @@ module.exports = (themeConfig) => {
         link: '/posts/',
       },
     ],
+    cover: themeConfig.cover || {
+      title: 'Bienvenidos a mi Blog',
+      subTitle: 'el Blog que estabas buscando',
+      content:
+        'Un Blog donde encontraras las diversas tecnologías a nuestro alcance.',
+      img: '/img/cover-img.png',
+    },
+    suscribe: themeConfig.suscribe || {
+      item1: {
+        img: '/img/spotify.svg',
+        route: 'http://spotify.com',
+      },
+      item2: {
+        img: '/img/tiktok.svg',
+        route: 'http://tiktok.com',
+      },
+      item3: {
+        img: '/img/youtube.svg',
+        route: 'http://youtube.com',
+      },
+    },
     summary: themeConfig.summary === undefined ? true : themeConfig.summary,
     summaryLength:
       typeof themeConfig.summaryLength === 'number'
@@ -34,12 +55,16 @@ module.exports = (themeConfig) => {
         id: 'post',
         dirname: '_posts',
         path: '/',
+        itemPermalink: '/:year/:month/:day/:slug',
+        pagination: {
+          lengthPerPage: 6,
+        },
       },
     ],
     frontmatters: [
       {
         id: 'tag',
-        keys: ['tags'],
+        keys: ['tag', 'tags'],
         path: '/posts/',
       },
     ],
@@ -93,7 +118,6 @@ module.exports = (themeConfig) => {
 
   const plugins = [
     '@vuepress/plugin-nprogress',
-    ['@vuepress/medium-zoom', true],
     [
       '@vuepress/search',
       {

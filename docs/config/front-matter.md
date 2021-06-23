@@ -22,7 +22,7 @@ title: Hola Mundo
 - Predeterminado: `indefinido`
 - Requerido: `false`
 
-La clave de las páginas del clasificador y también se mostrará en la publicación:
+Las palabras clave de las páginas para clasificarlas y también se mostrará en la publicación:
 
 <img src="../assets/tags.png" width="350px"/>
 <img src="../assets/content-tags.png" width="350px"/>
@@ -31,7 +31,7 @@ por ejemplo:
 
 ```markdown
 ---
-tags: 
+tags:
   - JavaScript
   - DOM
 ---
@@ -43,17 +43,38 @@ tags:
 - Predeterminado: `indefinido`
 - Requerido: `false`
 
-Nuestro formato recomendado es YYYY-MM-DD, pero en realidad acepta múltiples formatos. VuePress está usando `js-yaml` que sigue los tipos de yaml estándar, por lo que puede encontrar todos los formatos disponibles [aquí](https://yaml.org/type/timestamp.html).
+Nuestro formato recomendado es YYYY-MM-DD.
 
-Fecha de publicación. Esto se utilizará para el enlace permanente, la clasificación y se mostrará en el diseño:
+La fecha de publicación se utilizará para el enlace permanente, la clasificación y se mostrará en el diseño:
 
 <img src="../assets/date.png" width="350px"/>
 <img src="../assets/content-date.png" width="350px"/>
 
 por ejemplo:
+
 ```markdown
 ---
 date: 2016-10-20
+---
+```
+
+## Imagen (image)
+
+- Tipo: `string`
+- Predeterminado: `indefinido`
+- Requerido: `false`
+
+La imagen que se mostrara en las tarjetas en la lista de artículos.
+
+Es importante señalar que las imágenes deben tener una proporción de aspecto de 3/2 para que se muestren bien en el diseño.
+
+<img src="../assets/image.png" width="350px"/>
+
+por ejemplo:
+
+```markdown
+---
+image: tuimagen.png
 ---
 ```
 
@@ -76,7 +97,7 @@ author: ajwi
 ---
 ```
 
-## location
+## Ubicación (location)
 
 - Tipo: `string`
 - Predeterminado: `indefinido`
