@@ -4,7 +4,7 @@ module.exports = {
   theme: require.resolve('../../'),
   themeConfig: {
     /**
-     * Ref: https://vuepress-theme-blog.ulivz.com/config/#nav
+     * Ref: https://ajwi.github.io/aj-theme-blog_vuepress/config/#navegacion-nav
      */
 
     //nav: [
@@ -23,9 +23,13 @@ module.exports = {
     //],
 
     /**
-     * Ref: https://vuepress-theme-blog.ulivz.com
+     * Ref: https://ajwi.github.io/aj-theme-blog_vuepress/config/#logo
      */
     //logo: '/img/logo.svg',
+
+    /**
+     * Ref: https://ajwi.github.io/aj-theme-blog_vuepress/config/#banner-principal-cover
+     */
     //cover: {
     //  title: 'Bienvenidos a AJ-Wi',
     //  subTitle: 'el espacio donde aprendemos juntos',
@@ -34,7 +38,7 @@ module.exports = {
     //  img: '/img/cover-img.png',
     //},
     /**
-     * Ref: https://vuepress-theme-blog.ulivz.com
+     * Ref: https://ajwi.github.io/aj-theme-blog_vuepress/config/#suscribete-suscribe
      */
     //suscribe: {
     //  item1: {
@@ -52,7 +56,7 @@ module.exports = {
     //},
 
     /**
-     * Ref: https://vuepress-theme-blog.ulivz.com/config/#footer
+     * Ref: https://ajwi.github.io/aj-theme-blog_vuepress/config/#pie-de-pagina-footer
      */
     footer: {
       contact: [
@@ -86,7 +90,7 @@ module.exports = {
         },
         {
           type: 'mail',
-          link: '/',
+          link: 'ajwipo@gmail.com',
         },
         {
           type: 'messenger',
@@ -114,7 +118,7 @@ module.exports = {
         },
         {
           type: 'youtube',
-          link: '/',
+          link: 'https://www.youtube.com/channel/UCMzpttcB6zhVQzYuzhggnQA',
         },
       ],
       copyright: [
@@ -128,7 +132,7 @@ module.exports = {
       ],
     },
     /**
-     * Ref: https://vuepress-theme-blog.ulivz.com/config/#directories
+     * Ref: https://ajwi.github.io/aj-theme-blog_vuepress/config/#directorios-directories
      */
 
     //directories: [
@@ -150,7 +154,7 @@ module.exports = {
     //],
 
     /**
-     * Ref: https://vuepress-theme-blog.ulivz.com/config/#frontmatters
+     * Ref: https://ajwi.github.io/aj-theme-blog_vuepress/config/#frontmatters
      */
 
     //frontmatters: [
@@ -167,7 +171,7 @@ module.exports = {
     //],
 
     /**
-     * Ref: https://vuepress-theme-blog.ulivz.com/config/#globalpagination
+     * Ref: https://ajwi.github.io/aj-theme-blog_vuepress/config/#paginacion-global-globalpagination
      */
 
     // globalPagination: {
@@ -175,58 +179,58 @@ module.exports = {
     // },
 
     /**
-     * Ref: https://vuepress-theme-blog.ulivz.com/config/#sitemap
+     * Ref: https://ajwi.github.io/aj-theme-blog_vuepress/config/#mapa-del-sitio-sitemap
      */
     sitemap: {
-      hostname: 'https://example.vuepress-theme-blog.ulivz.com/',
+      hostname: 'https://tudominio.com/',
     },
     /**
-     * Ref: https://vuepress-theme-blog.ulivz.com/config/#comment
+     * Ref: https://ajwi.github.io/aj-theme-blog_vuepress/config/#comentarios-comment
      */
     comment: {
       service: 'disqus',
-      shortname: 'vuepress-plugin-blog',
+      shortname: 'vuepress-theme-ajwi',
     },
     /**
-     * Ref: https://vuepress-theme-blog.ulivz.com/config/#newsletter
+     * Ref: https://ajwi.github.io/aj-theme-blog_vuepress/config/#boletin-informatico-newsletter
      */
     newsletter: {
       endpoint:
-        'https://billyyyyy3320.us4.list-manage.com/subscribe/post?u=4905113ee00d8210c2004e038&amp;id=bd18d40138',
+        'https://tuendpoint.com/subscribe/post?u=4905113ee00d8210c2004e038&amp;id=bd18d40138',
     },
     /**
-     * Ref: https://vuepress-theme-blog.ulivz.com/config/#feed
+     * Ref: https://ajwi.github.io/aj-theme-blog_vuepress/config/#feed
      */
     feed: {
-      canonical_base: 'https://example.vuepress-theme-blog.ulivz.com/',
+      canonical_base: 'https://tudominio.com/',
     },
 
     /**
-     * Ref: https://vuepress-theme-blog.ulivz.com/config/#summary
+     * Ref: https://ajwi.github.io/aj-theme-blog_vuepress/config/#resumen-summary
      */
 
     // summary:false,
 
     /**
-     * Ref: https://vuepress-theme-blog.ulivz.com/config/#summarylength
+     * Ref: https://ajwi.github.io/aj-theme-blog_vuepress/config/#longitud-del-resumen-summarylength
      */
 
     // summaryLength:100,
 
     /**
-     * Ref: https://vuepress-theme-blog.ulivz.com/config/#pwa
+     * Ref: https://ajwi.github.io/aj-theme-blog_vuepress/config/#pwa
      */
 
     // pwa:true,
 
     /**
-     * Ref: https://vuepress-theme-blog.ulivz.com/config/#paginationcomponent
+     * Ref: https://ajwi.github.io/aj-theme-blog_vuepress/config/#componente-de-paginacion-paginationcomponent
      */
 
     // paginationComponent: 'SimplePagination'
 
     /**
-     * Ref: https://vuepress-theme-blog.ulivz.com/config/#smoothscroll
+     * Ref: https://ajwi.github.io/aj-theme-blog_vuepress/config/#desplazamiento-suave-smoothscroll
      */
     smoothScroll: true,
   },

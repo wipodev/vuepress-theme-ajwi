@@ -1,6 +1,6 @@
 {
   "name": "vuepress-theme-ajwi",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Another blog theme for VuePress",
   "keywords": [
     "vue",
@@ -11,6 +11,7 @@
     "vuepress-theme-blog",
     "vuepress-theme-ajwi"
   ],
+  "homepage": "https://ajwi.github.io/aj-theme-blog_vuepress",
   "repository": {
     "type": "git",
     "url": "aj-wi/aj-theme-blog_vuepress"
@@ -23,13 +24,12 @@
     "styles",
     "layouts",
     "global-components",
-    "fonts",
     "components"
   ],
   "scripts": {
     "docs:build": "vuepress build docs",
     "docs:dev": "vuepress dev docs",
-    "deploy": "npm run docs:build && gh-pages -d docs/.vuepress/dist",
+    "deploy": "gh-pages -d docs/.vuepress/dist",
     "example:build": "vuepress build example --temp example/.temp",
     "example:dev": "vuepress dev example --temp example/.temp",
     "lint": "eslint . --ext .js,.vue"

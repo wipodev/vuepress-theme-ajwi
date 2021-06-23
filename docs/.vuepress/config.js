@@ -1,4 +1,5 @@
 module.exports = {
+  base: '/AJ-theme-blog_vuepress/',
   title: 'Vuepress-theme-ajwi',
   description: 'Tema de blog personalizado para vuepress',
   themeConfig: {
@@ -13,13 +14,8 @@ module.exports = {
     ],
     sidebarDepth: 3,
     sidebar: {
-      '/config/': [
-        '',
-        'front-matter',
-        'palette'
-      ],
+      '/config/': ['', 'front-matter', 'palette'],
     },
     smoothScroll: true,
   },
 }
-
