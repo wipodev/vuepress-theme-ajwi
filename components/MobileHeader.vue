@@ -2,7 +2,9 @@
   <div id="mobile-header">
     <div class="mobile-header-bar">
       <div class="mobile-header-title">
-        <NavLink link="/" class="mobile-home-link">{{ $site.title }} </NavLink>
+        <NavLink link="/" class="mobile-home-link"
+          >{{ $site.title || 'Blog Example' }}
+        </NavLink>
         <component
           :is="isOpen ? 'XIcon' : 'MenuIcon'"
           @click="$emit('toggle-sidebar')"

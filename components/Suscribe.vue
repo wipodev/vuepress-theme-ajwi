@@ -6,6 +6,7 @@
         v-for="item in suscribe"
         :key="item.img"
         :img="item.img"
+        :title="item.title"
         :route="item.route"
       />
     </div>

@@ -12,7 +12,9 @@
           />
         </div>
         <div class="title">
-          <NavLink link="/" class="home-link">{{ $site.title }} </NavLink>
+          <NavLink link="/" class="home-link"
+            >{{ $site.title || 'Blog Example' }}
+          </NavLink>
         </div>
         <div class="header-right-wrap">
           <ul v-if="$themeConfig.nav" class="nav">
