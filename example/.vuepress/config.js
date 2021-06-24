@@ -157,18 +157,18 @@ module.exports = {
      * Ref: https://ajwi.github.io/aj-theme-blog_vuepress/config/#frontmatters
      */
 
-    //frontmatters: [
-    //  {
-    //    id: 'tag',
-    //    keys: ['tag', 'tags'],
-    //    path: '/posts/',
-    //  },
-    //  {
-    //    id: 'location',
-    //    keys: ['location'],
-    //    path: '/location/',
-    //  },
-    //],
+    frontmatters: [
+      {
+        id: 'tag',
+        keys: ['tag', 'tags'],
+        path: '/posts/',
+      },
+      //  {
+      //    id: 'location',
+      //    keys: ['location'],
+      //    path: '/location/',
+      //  },
+    ],
 
     /**
      * Ref: https://ajwi.github.io/aj-theme-blog_vuepress/config/#paginacion-global-globalpagination

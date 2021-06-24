@@ -140,7 +140,26 @@ De forma predeterminada, el resumen se extraerá de las publicaciones de blog. S
 
 ## Final
 
-Ahora, revisa tu blog en `localhost:8080`, si todo está bien, es posible que te interesen los siguientes temas:
+Ahora, para que los artículos que creaste aparezcan en el blog debes configurar la siguiente opción:
+
+```js
+// .vuepress/config.js
+module.exports = {
+  title: 'VuePress Blog Example',
+  theme: 'vuepress-theme-ajwi',
+  themeConfig: {
+    frontmatters: [
+      {
+        id: 'tag',
+        keys: ['tags', 'tag'],
+        path: '/posts/',
+      },
+    ],
+  },
+}
+```
+
+Por ultimo revisa tu blog en `localhost:8080`, si todo está bien, es posible que te interesen los siguientes temas:
 
 - Configure este tema: lo discutiremos en [la siguiente sección](../config)
 - Implemente su blog: lea [ la sección de implementación en la documentación de VuePress](https://vuepress.vuejs.org/guide/deploy.html)

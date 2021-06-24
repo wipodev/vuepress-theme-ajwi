@@ -22,21 +22,21 @@ module.exports = (themeConfig) => {
       subTitle: 'el Blog que estabas buscando',
       content:
         'Un Blog donde encontraras las diversas tecnologías a nuestro alcance.',
-      img: '/img/cover-img.png',
+      img: 'https://github.com/AJ-Wi/AJ-theme-blog_vuepress/blob/master/example/.vuepress/public/img/cover-img.png',
     },
     suscribe: themeConfig.suscribe || {
       item1: {
-        img: '/img/spotify.svg',
+        img: 'https://github.com/AJ-Wi/AJ-theme-blog_vuepress/blob/master/example/.vuepress/public/img/spotify.svg',
         title: 'Spotify',
         route: 'https://open.spotify.com/show/6Xok8xe3eVWCzqGOiUlE2c',
       },
       item2: {
-        img: '/img/tiktok.svg',
+        img: 'https://github.com/AJ-Wi/AJ-theme-blog_vuepress/blob/master/example/.vuepress/public/img/tiktok.svg',
         title: 'Tiktok',
         route: 'https://www.tiktok.com/@ajwipo?lang=es',
       },
       item3: {
-        img: '/img/youtube.svg',
+        img: 'https://github.com/AJ-Wi/AJ-theme-blog_vuepress/blob/master/example/.vuepress/public/img/youtube.svg',
         title: 'Youtube',
         route: 'https://youtube.com/channel/UCMzpttcB6zhVQzYuzhggnQA',
       },
@@ -83,7 +83,6 @@ module.exports = (themeConfig) => {
         id: 'post',
         dirname: '_posts',
         path: '/',
-        itemPermalink: '/:year/:month/:day/:slug',
         pagination: {
           lengthPerPage: 6,
         },
@@ -92,7 +91,7 @@ module.exports = (themeConfig) => {
     frontmatters: [
       {
         id: 'tag',
-        keys: ['tag', 'tags'],
+        keys: ['tags'],
         path: '/posts/',
       },
     ],
