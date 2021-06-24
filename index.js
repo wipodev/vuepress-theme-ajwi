@@ -27,16 +27,44 @@ module.exports = (themeConfig) => {
     suscribe: themeConfig.suscribe || {
       item1: {
         img: '/img/spotify.svg',
-        route: 'http://spotify.com',
+        title: 'Spotify',
+        route: 'https://open.spotify.com/show/6Xok8xe3eVWCzqGOiUlE2c',
       },
       item2: {
         img: '/img/tiktok.svg',
-        route: 'http://tiktok.com',
+        title: 'Tiktok',
+        route: 'https://www.tiktok.com/@ajwipo?lang=es',
       },
       item3: {
         img: '/img/youtube.svg',
-        route: 'http://youtube.com',
+        title: 'Youtube',
+        route: 'https://youtube.com/channel/UCMzpttcB6zhVQzYuzhggnQA',
       },
+    },
+    footer: themeConfig.footer || {
+      contact: [
+        {
+          type: 'github',
+          link: 'https://github.com/ajwi',
+        },
+        {
+          type: 'mail',
+          link: 'ajwipo@gmail.com',
+        },
+        {
+          type: 'youtube',
+          link: 'https://www.youtube.com/channel/UCMzpttcB6zhVQzYuzhggnQA',
+        },
+      ],
+      copyright: [
+        {
+          text: 'Privacy Policy',
+          link: 'https://policies.google.com/privacy?hl=en-US',
+        },
+        {
+          text: 'MIT Licensed | Copyright © 2018-present AJ-Wi',
+        },
+      ],
     },
     summary: themeConfig.summary === undefined ? true : themeConfig.summary,
     summaryLength:
