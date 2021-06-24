@@ -1,6 +1,6 @@
 module.exports = {
-  title: 'Blog Example',
-  description: 'This is a blog example built by VuePress',
+  //title: 'Blog Example',
+  //description: 'This is a blog example built by VuePress',
   theme: require.resolve('../../'),
   themeConfig: {
     /**
@@ -58,79 +58,79 @@ module.exports = {
     /**
      * Ref: https://ajwi.github.io/aj-theme-blog_vuepress/config/#pie-de-pagina-footer
      */
-    footer: {
-      contact: [
-        {
-          type: 'codepen',
-          link: '/',
-        },
-        {
-          type: 'codesandbox',
-          link: '/',
-        },
-        {
-          type: 'facebook',
-          link: '/',
-        },
-        {
-          type: 'github',
-          link: 'https://github.com/ajwi',
-        },
-        {
-          type: 'gitlab',
-          link: '/',
-        },
-        {
-          type: 'instagram',
-          link: '/',
-        },
-        {
-          type: 'linkedin',
-          link: '/',
-        },
-        {
-          type: 'mail',
-          link: 'ajwipo@gmail.com',
-        },
-        {
-          type: 'messenger',
-          link: '/',
-        },
-        {
-          type: 'music',
-          link: '/',
-        },
-        {
-          type: 'phone',
-          link: '/',
-        },
-        {
-          type: 'twitter',
-          link: '/',
-        },
-        {
-          type: 'video',
-          link: '/',
-        },
-        {
-          type: 'web',
-          link: '/',
-        },
-        {
-          type: 'youtube',
-          link: 'https://www.youtube.com/channel/UCMzpttcB6zhVQzYuzhggnQA',
-        },
-      ],
-      copyright: [
-        {
-          text: 'Privacy Policy',
-          link: 'https://policies.google.com/privacy?hl=en-US',
-        },
-        {
-          text: 'MIT Licensed | Copyright © 2018-present AJ-Wi',
-        },
-      ],
-    },
+    //footer: {
+    //  contact: [
+    //    {
+    //      type: 'codepen',
+    //      link: '/',
+    //    },
+    //    {
+    //      type: 'codesandbox',
+    //      link: '/',
+    //    },
+    //    {
+    //      type: 'facebook',
+    //      link: '/',
+    //    },
+    //    {
+    //      type: 'github',
+    //      link: 'https://github.com/ajwi',
+    //    },
+    //    {
+    //      type: 'gitlab',
+    //      link: '/',
+    //    },
+    //    {
+    //      type: 'instagram',
+    //      link: '/',
+    //    },
+    //    {
+    //      type: 'linkedin',
+    //      link: '/',
+    //    },
+    //    {
+    //      type: 'mail',
+    //      link: 'ajwipo@gmail.com',
+    //    },
+    //    {
+    //      type: 'messenger',
+    //      link: '/',
+    //    },
+    //    {
+    //      type: 'music',
+    //      link: '/',
+    //    },
+    //    {
+    //      type: 'phone',
+    //      link: '/',
+    //    },
+    //    {
+    //      type: 'twitter',
+    //      link: '/',
+    //    },
+    //    {
+    //      type: 'video',
+    //      link: '/',
+    //    },
+    //    {
+    //      type: 'web',
+    //      link: '/',
+    //    },
+    //    {
+    //      type: 'youtube',
+    //      link: 'https://www.youtube.com/channel/UCMzpttcB6zhVQzYuzhggnQA',
+    //    },
+    //  ],
+    //  copyright: [
+    //    {
+    //      text: 'Privacy Policy',
+    //      link: 'https://policies.google.com/privacy?hl=en-US',
+    //    },
+    //    {
+    //      text: 'MIT Licensed | Copyright © 2018-present AJ-Wi',
+    //    },
+    //  ],
+    //},
     /**
      * Ref: https://ajwi.github.io/aj-theme-blog_vuepress/config/#directorios-directories
      */
