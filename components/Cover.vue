@@ -1,7 +1,8 @@
 <template>
   <div class="cover-container">
     <div class="cover-img">
-      <img :src="cover.img" :alt="cover.title" />
+      <img v-if="cover.img !== 'Blog'" :src="cover.img" :alt="cover.title" />
+      <SocialImg v-else :img="cover.img" />
     </div>
     <div class="cover-content">
       <h1>{{ cover.title }}</h1>
@@ -12,7 +13,12 @@
 </template>
 
 <script>
+import SocialImg from '@theme/components/SocialImg.vue'
+
 export default {
+  components: {
+    SocialImg,
+  },
   computed: {
     cover() {
       return this.$themeConfig.cover || []
@@ -39,7 +45,8 @@ export default {
 .cover-img
   width 40%
   padding 10% 5% 10% 0
-  img
+  img&
+  svg
     max-width 100%
     height auto
 

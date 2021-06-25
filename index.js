@@ -22,21 +22,21 @@ module.exports = (themeConfig) => {
       subTitle: 'el Blog que estabas buscando',
       content:
         'Un Blog donde encontraras las diversas tecnologías a nuestro alcance.',
-      img: 'https://github.com/AJ-Wi/AJ-theme-blog_vuepress/blob/master/example/.vuepress/public/img/cover-img.png',
+      img: 'Blog',
     },
     suscribe: themeConfig.suscribe || {
       item1: {
-        img: 'https://github.com/AJ-Wi/AJ-theme-blog_vuepress/blob/master/example/.vuepress/public/img/spotify.svg',
+        img: 'default',
         title: 'Spotify',
         route: 'https://open.spotify.com/show/6Xok8xe3eVWCzqGOiUlE2c',
       },
       item2: {
-        img: 'https://github.com/AJ-Wi/AJ-theme-blog_vuepress/blob/master/example/.vuepress/public/img/tiktok.svg',
+        img: 'default',
         title: 'Tiktok',
         route: 'https://www.tiktok.com/@ajwipo?lang=es',
       },
       item3: {
-        img: 'https://github.com/AJ-Wi/AJ-theme-blog_vuepress/blob/master/example/.vuepress/public/img/youtube.svg',
+        img: 'default',
         title: 'Youtube',
         route: 'https://youtube.com/channel/UCMzpttcB6zhVQzYuzhggnQA',
       },
@@ -66,6 +66,13 @@ module.exports = (themeConfig) => {
         },
       ],
     },
+    frontmatters: [
+      {
+        id: 'tag',
+        keys: ['tags'],
+        path: '/posts/',
+      },
+    ],
     summary: themeConfig.summary === undefined ? true : themeConfig.summary,
     summaryLength:
       typeof themeConfig.summaryLength === 'number'

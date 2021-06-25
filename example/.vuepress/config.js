@@ -6,7 +6,6 @@ module.exports = {
     /**
      * Ref: https://ajwi.github.io/aj-theme-blog_vuepress/config/#navegacion-nav
      */
-
     //nav: [
     //  {
     //    text: 'Home',
@@ -21,12 +20,10 @@ module.exports = {
     //    link: '/about/',
     //  },
     //],
-
     /**
      * Ref: https://ajwi.github.io/aj-theme-blog_vuepress/config/#logo
      */
     //logo: '/img/logo.svg',
-
     /**
      * Ref: https://ajwi.github.io/aj-theme-blog_vuepress/config/#banner-principal-cover
      */
@@ -54,7 +51,6 @@ module.exports = {
     //    route: 'http://youtube.com',
     //  },
     //},
-
     /**
      * Ref: https://ajwi.github.io/aj-theme-blog_vuepress/config/#pie-de-pagina-footer
      */
@@ -134,7 +130,6 @@ module.exports = {
     /**
      * Ref: https://ajwi.github.io/aj-theme-blog_vuepress/config/#directorios-directories
      */
-
     //directories: [
     //  {
     //    id: 'post',
@@ -152,86 +147,72 @@ module.exports = {
     //  itemPermalink: '/:year/:month/:day/:slug',
     //},
     //],
-
     /**
      * Ref: https://ajwi.github.io/aj-theme-blog_vuepress/config/#frontmatters
      */
-
-    frontmatters: [
-      {
-        id: 'tag',
-        keys: ['tag', 'tags'],
-        path: '/posts/',
-      },
-      //  {
-      //    id: 'location',
-      //    keys: ['location'],
-      //    path: '/location/',
-      //  },
-    ],
-
+    //frontmatters: [
+    //  {
+    //    id: 'tag',
+    //    keys: ['tag', 'tags'],
+    //    path: '/posts/',
+    //  },
+    //  {
+    //    id: 'location',
+    //    keys: ['location'],
+    //    path: '/location/',
+    //  },
+    //],
     /**
      * Ref: https://ajwi.github.io/aj-theme-blog_vuepress/config/#paginacion-global-globalpagination
      */
-
     // globalPagination: {
     //   lengthPerPage: 9,
     // },
-
     /**
      * Ref: https://ajwi.github.io/aj-theme-blog_vuepress/config/#mapa-del-sitio-sitemap
      */
-    sitemap: {
-      hostname: 'https://tudominio.com/',
-    },
+    //sitemap: {
+    //  hostname: 'https://tudominio.com/',
+    //},
     /**
      * Ref: https://ajwi.github.io/aj-theme-blog_vuepress/config/#comentarios-comment
      */
-    comment: {
-      service: 'disqus',
-      shortname: 'vuepress-theme-ajwi',
-    },
+    //comment: {
+    //  service: 'disqus',
+    //  shortname: 'vuepress-theme-ajwi',
+    //},
     /**
      * Ref: https://ajwi.github.io/aj-theme-blog_vuepress/config/#boletin-informatico-newsletter
      */
-    newsletter: {
-      endpoint:
-        'https://tuendpoint.com/subscribe/post?u=4905113ee00d8210c2004e038&amp;id=bd18d40138',
-    },
+    //newsletter: {
+    //  endpoint:
+    //    'https://tuendpoint.com/subscribe/post?u=4905113ee00d8210c2004e038&amp;id=bd18d40138',
+    //},
     /**
      * Ref: https://ajwi.github.io/aj-theme-blog_vuepress/config/#feed
      */
-    feed: {
-      canonical_base: 'https://tudominio.com/',
-    },
-
+    //feed: {
+    //  canonical_base: 'https://tudominio.com/',
+    //},
     /**
      * Ref: https://ajwi.github.io/aj-theme-blog_vuepress/config/#resumen-summary
      */
-
     // summary:false,
-
     /**
      * Ref: https://ajwi.github.io/aj-theme-blog_vuepress/config/#longitud-del-resumen-summarylength
      */
-
     // summaryLength:100,
-
     /**
      * Ref: https://ajwi.github.io/aj-theme-blog_vuepress/config/#pwa
      */
-
     // pwa:true,
-
     /**
      * Ref: https://ajwi.github.io/aj-theme-blog_vuepress/config/#componente-de-paginacion-paginationcomponent
      */
-
     // paginationComponent: 'SimplePagination'
-
     /**
      * Ref: https://ajwi.github.io/aj-theme-blog_vuepress/config/#desplazamiento-suave-smoothscroll
      */
-    smoothScroll: true,
+    //smoothScroll: true,
   },
 }

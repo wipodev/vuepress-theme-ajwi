@@ -4,7 +4,7 @@
     <div class="suscribe-items">
       <SuscribeItem
         v-for="item in suscribe"
-        :key="item.img"
+        :key="item.title"
         :img="item.img"
         :title="item.title"
         :route="item.route"
