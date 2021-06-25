@@ -137,14 +137,7 @@ export default {
   display none !important
 
 .vuepress-toc
-  position sticky
-  top $headerHeight
-  display none
-  min-width $sidebarWidth
-  overflow-y auto
   padding-top 2rem
-  box-sizing border-box
-  z-index 9
 
   .vuepress-toc-item
     position relative
@@ -179,9 +172,4 @@ export default {
   for i in range(3, 6)
     .vuepress-toc-h{i} a
       padding-left 1rem * (i - 2)
-
-// for vuepress-toc
-@media (min-width: $MQNarrow)
-  .vuepress-toc
-    display block
 </style>

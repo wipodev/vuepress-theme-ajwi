@@ -49,12 +49,21 @@ export default {
 <style lang="stylus">
 @require '../styles/wrapper.styl'
 
-.vuepress-theme-blog__post-content
-  display flex
-
 .sidebar
-  border-right 1px solid $border
+  display none
   background $bgSidebar
+  width $sidebarWidth
+  position fixed
+  z-index 9
+  margin 0
+  top $headerHeight
+  left 0
+  bottom 0
+  box-sizing border-box
+  border-right 1px solid $border
+  overflow-y auto
+  @media (min-width: $MQNarrow)
+    display block
 
 .vuepress-blog-theme-content
   @extend $wrapper
@@ -62,6 +71,7 @@ export default {
   letter-spacing 0px
   color $textColor
   position relative
+  left $sidebarWidth
   max-width 740px
 
   .post-title

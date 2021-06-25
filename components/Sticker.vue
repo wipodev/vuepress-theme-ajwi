@@ -74,7 +74,6 @@ export default {
 
 <style lang="stylus">
 .sticker
-  position fixed
 
   &.stick-float
     top auto
