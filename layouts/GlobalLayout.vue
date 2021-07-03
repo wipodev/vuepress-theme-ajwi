@@ -38,4 +38,9 @@ export default {
 };
 </script>
 
-<style lang="stylus"></style>
+<style lang="stylus">
+#site-container
+  display grid
+  grid-template-rows 60px 1fr 80px
+  min-height 100vh
+</style>
