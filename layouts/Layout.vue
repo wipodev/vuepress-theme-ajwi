@@ -1,13 +1,6 @@
 <template>
   <div>
-    <Content />
+    <BaseListPosts v-if="$pagination" />
+    <Content v-else />
   </div>
 </template>
-
-<script>
-export default {
-  components: {},
-};
-</script>
-
-<style lang="stylus"></style>
