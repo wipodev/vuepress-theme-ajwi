@@ -16,7 +16,7 @@ VuePress implements a content distribution API for Markdown. With this feature, 
 
 First, let's review the relationship between layout components and markdown files:
 
-<diagram-markdown-slot-relationship/>
+`<diagram-markdown-slot-relationship/>`
 
 Markdown files are providers of metadata (Page content, Configuration, etc.), while layout components consume them. We can use `frontmatter` to define some metadata for common data types, but `frontmatter` is hard to do something about markdown / HTML, a complex metadata that involves differences before and after compilation.
 
