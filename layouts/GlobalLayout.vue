@@ -43,4 +43,6 @@ export default {
   display grid
   grid-template-rows 60px 1fr 80px
   min-height 100vh
+  @media (min-width $MQNarrow)
+    grid-template-rows 60px 1fr 200px
 </style>
