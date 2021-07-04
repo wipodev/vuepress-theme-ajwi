@@ -40,6 +40,7 @@ export default {
   display flex
   position sticky
   top 0
+  z-index 9
 
   &::after
     content ""
@@ -93,4 +94,11 @@ export default {
 
     .feed
       display none
+
+    @media (min-width $MQMobile)
+      .hamburger
+        display none
+
+      .feed
+        display flex
 </style>
