@@ -173,6 +173,16 @@ export default {
           margin-right 5px
 
 @media (min-width $MQMobileNarrow)
+  .list-posts_title
+    font-size 1.33rem
+
   .list-posts
     grid-template-columns repeat(2, 1fr)
+
+@media (min-width $MQNarrow)
+  .list-posts_title
+    font-size 2rem
+
+  .list-posts
+    grid-template-columns repeat(3, 1fr)
 </style>
