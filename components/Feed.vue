@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import { RssIcon } from 'vue-feather-icons'
+import { RssIcon } from "vue-feather-icons";
 
 export default {
   components: { RssIcon },
@@ -13,23 +13,23 @@ export default {
   computed: {
     firstEnabledFeed() {
       for (const feed in this.$service.feed) {
-        const isEnabled = this.$service.feed[feed]
-        if (isEnabled) return feed
+        const isEnabled = this.$service.feed[feed];
+        if (isEnabled) return feed;
       }
-      return false
+      return false;
     },
     feedFilePath() {
-      if (!this.firstEnabledFeed) return
+      if (!this.firstEnabledFeed) return;
 
-      let path = ''
-      if (this.firstEnabledFeed === 'rss') path = '/rss.xml'
-      if (this.firstEnabledFeed === 'atom') path = '/feed.atom'
-      if (this.firstEnabledFeed === 'json') path = '/feed.json'
+      let path = "";
+      if (this.firstEnabledFeed === "rss") path = "/rss.xml";
+      if (this.firstEnabledFeed === "atom") path = "/feed.atom";
+      if (this.firstEnabledFeed === "json") path = "/feed.json";
 
-      return this.$withBase(path)
+      return this.$withBase(path);
     },
   },
-}
+};
 </script>
 
 <style lang="stylus">
