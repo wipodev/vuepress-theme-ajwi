@@ -133,6 +133,8 @@ ol, ul
   padding 10px 15px
   font-size .9rem
   border-top 1px solid $border
+  display grid
+  place
 
   .site-footer_nav
     .contact
