@@ -134,7 +134,7 @@ ol, ul
   font-size .9rem
   border-top 1px solid $border
   display grid
-  place
+  place-content center
 
   .site-footer_nav
     .contact
