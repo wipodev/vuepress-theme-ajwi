@@ -149,10 +149,7 @@ module.exports = (themeConfig) => {
    * Integrate plugins
    */
 
-  const enableSmoothScroll = themeConfig.smoothScroll === true;
-
   const plugins = [
-    "@vuepress/plugin-nprogress",
     [
       "@vuepress/search",
       {
@@ -201,21 +198,7 @@ module.exports = (themeConfig) => {
         after: () => "</details>\n",
       },
     ],
-    ["smooth-scroll", enableSmoothScroll],
   ];
-
-  /**
-   * Enable pwa
-   */
-  if (themeConfig.pwa) {
-    plugins.push([
-      "@vuepress/pwa",
-      {
-        serviceWorker: true,
-        updatePopup: true,
-      },
-    ]);
-  }
 
   const config = {
     plugins,
