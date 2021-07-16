@@ -135,6 +135,8 @@ export default {
 <style lang="stylus">
 .list-content
   padding-top 15px
+  display grid
+  justify-items center
 
   .list-posts_title
     color $primary
@@ -142,6 +144,7 @@ export default {
 
 .list-posts
   display grid
+  max-width 1150px
   justify-items center
   padding 15px
   gap 15px
