@@ -4,7 +4,7 @@ date: 2021-6-4
 image: /img/posts/glosario.png
 tags:
   - all
-  - Diccionario
+  - glosario
 author: wladimir pérez
 location: Lima/Perú
 ---
