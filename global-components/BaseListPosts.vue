@@ -134,7 +134,7 @@ export default {
 
 <style lang="stylus">
 .list-content
-  padding-top 15px
+  padding 15px 0
   display grid
   justify-items center
 
