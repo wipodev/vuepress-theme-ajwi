@@ -33,7 +33,7 @@ export default {
   @media (min-width $MQMobileNarrow)
     display grid
     grid-template-columns 1fr 1fr
-    background-color $primary
+    background $bgCover
     gap 15px
     padding 15px
 
