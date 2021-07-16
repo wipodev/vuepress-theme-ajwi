@@ -73,7 +73,7 @@ export default {
         font-size 0.8rem
 
   @media (min-width $MQNarrow)
-    min-height 100vh
+    min-height calc(100vh - 60px)
 
     .cover-content
       h1
