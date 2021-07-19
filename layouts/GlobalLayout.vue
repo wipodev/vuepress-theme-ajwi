@@ -1,11 +1,10 @@
 <template>
-  <div id="vuepress-theme-blog__global-layout">
-    <Header />
-    <MobileHeader
+  <div id="site-container">
+    <Header
       :is-open="isMobileHeaderOpen"
       @toggle-sidebar="isMobileHeaderOpen = !isMobileHeaderOpen"
     />
-    <div class="content-wrapper" @click="isMobileHeaderOpen = false">
+    <div class="site-content" @click="isMobileHeaderOpen = false">
       <DefaultGlobalLayout />
     </div>
     <Footer />
@@ -15,14 +14,12 @@
 <script>
 import GlobalLayout from '@app/components/GlobalLayout.vue'
 import Header from '@theme/components/Header.vue'
-import MobileHeader from '@theme/components/MobileHeader.vue'
 import Footer from '@theme/components/Footer.vue'
 
 export default {
   components: {
     DefaultGlobalLayout: GlobalLayout,
     Header,
-    MobileHeader,
     Footer,
   },
 
@@ -41,17 +38,11 @@ export default {
 </script>
 
 <style lang="stylus">
-#vuepress-theme-blog__global-layout
-  word-wrap break-word
-
-.content-wrapper
-  padding $headerHeight 0 0 0
-  min-height calc(100vh - 80px - 60px - $headerHeight)
+.site-content
+  position relative
+  top $headerHeight
+  left 0
   width $contentWidth
   max-width 1400px
   margin 0 auto
-
-  @media (max-width: $MQMobile)
-    &
-      min-height calc(100vh - 20px - 60px - 100px)
 </style>
