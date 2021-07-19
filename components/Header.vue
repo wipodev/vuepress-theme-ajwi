@@ -1,146 +1,177 @@
 <template>
-  <section id="header-wrapper">
-    <header id="header">
-      <div class="header-wrapper">
-        <div class="logo">
-          <ImgLink
-            v-if="$themeConfig.logo"
-            link="/"
-            :img="$themeConfig.logo"
-            :alt="$site.title || 'AJ-Wi'"
-            class="logo-link"
-          />
-        </div>
-        <div class="title">
-          <NavLink link="/" class="home-link"
-            >{{ $site.title || 'Blog Example' }}
-          </NavLink>
-        </div>
-        <div class="header-right-wrap">
-          <ul v-if="$themeConfig.nav" class="nav">
-            <li
-              v-for="item in $themeConfig.nav"
-              :key="item.text"
-              class="nav-item"
-            >
-              <NavLink :link="item.link">{{ item.text }}</NavLink>
-            </li>
-          </ul>
-          <SearchBox />
+  <header class="site-header">
+    <div class="header-content">
+      <section class="header-content_left">
+        <ImgLink
+          link="/"
+          :img="$themeConfig.logo"
+          :alt="$site.title || 'AJ-Wi'"
+        />
+        <NavLink link="/" class="link-title"
+          >{{ $site.title || 'Blog Example' }}
+        </NavLink>
+      </section>
+      <section class="header-content_right">
+        <ul class="nav">
+          <li
+            v-for="item in $themeConfig.nav"
+            :key="item.text"
+            class="nav-item"
+          >
+            <NavLink :link="item.link">{{ item.text }}</NavLink>
+          </li>
+        </ul>
+        <SearchBox />
+        <component
+          :is="isOpen ? 'XIcon' : 'MenuIcon'"
+          class="hamburger"
+          @click="$emit('toggle-sidebar')"
+        />
+        <Feed class="hidden" />
+      </section>
+    </div>
+    <div class="mobile-menu-wrapper" :class="{ open: isOpen }">
+      <ul v-if="$themeConfig.nav" class="mobile-nav">
+        <li
+          v-for="item in $themeConfig.nav"
+          :key="item.text"
+          class="mobile-nav-item"
+        >
+          <NavLink :link="item.link">{{ item.text }}</NavLink>
+        </li>
+        <li class="mobile-nav-item">
           <Feed />
-        </div>
-      </div>
-    </header>
-  </section>
+        </li>
+      </ul>
+    </div>
+  </header>
 </template>
 
 <script>
+import { MenuIcon, XIcon } from 'vue-feather-icons'
 import SearchBox from '@SearchBox'
 import Feed from './Feed'
 
 export default {
-  components: { SearchBox, Feed },
+  components: { MenuIcon, XIcon, SearchBox, Feed },
+  props: {
+    isOpen: {
+      type: Boolean,
+      required: true,
+    },
+  },
 }
 </script>
 
 <style lang="stylus">
-@import '~@app/style/config'
-
-#header
-  z-index 12
+.site-header
   position fixed
-  top 0
-  left 50%
-  transform translateX(-50%)
   width 100vw
-  max-width 1400px
+  z-index 9
   height $headerHeight
-  box-sizing border-box
   background-color $bgHeader
-  padding 20px 32px 20px
-  border-bottom 1px solid $border
 
-  ol, ul
-    list-style none
-    margin 0
-    padding 0
+  &::after
+    content ""
+    position absolute
+    top ($headerHeight - 4px)
+    left 0
+    width 100%
+    height 4px
+    background linear-gradient(130deg, #ff7a18, #af002d 41.07%, #319197 76.05%)
 
+  .header-content
+    max-width 1170px
+    height ($headerHeight - 4px)
+    margin auto
+    padding 0 10px
+    display flex
+    justify-content space-between
 
-.header-wrapper
-  display flex
-  line-height 40px
-  height 40px
-  max-width: 1170px
-  margin: auto
-  align-items center
-
-  .logo
-    height $headerHeight
-    width 120px
-    margin-right 15px
-
-    .logo-link
-      img
-        height $headerHeight
-
-  .title
-    font-size 30px
-    margin 0
-    letter-spacing 2px
-    display block
-    text-transform uppercase
-    @media (max-width: $MQNarrow)
-      font-size 20px
-
-    a
-      color $textColor
-      font-weight bold
+    .nav-link
       text-decoration none
 
-  .header-right-wrap
-    flex 1
-    display flex
-    justify-content flex-end
-    align-items center
-
-    .nav
-      flex 0 0 auto
+    .header-content_left,.header-content_right
       display flex
-      margin 0
+      align-items center
 
-      .nav-item
-        margin-left 20px
+      img, #Logo
+        height ($headerHeight - 4px)
+        width auto
+        margin-right 15px
 
-        a
-          color $textColor
+      .link-title
+        font-size 30px
+        letter-spacing 2px
+        text-transform uppercase
+        font-weight bold
+        color $textColor
+        @media (max-width: $MQNarrow)
           font-size 20px
-          text-decoration none
-          transition color 0.3s
 
-    .search-box
-      margin-left 20px
+      .nav
+        display flex
+        list-style none
 
-      input
-        border-radius 5px
-        transition all 0.5s
-        border 1px solid #cecece
-        color $darkTextColor
+        .nav-item
+          margin-right 20px
 
-        &:hover
-          border 1px solid $border
-          box-shadow 0 0 5px $primary
+          .nav-link
+            font-size 20px
+            transition color 0.3s
 
-      .suggestions
-        border 1px solid $darkBorderColor
-        top 40px
-        right 0
+      .search-box
 
-        a
+        input
+          border-radius 5px
+          transition all 0.5s
+          border 1px solid #cecece
           color $darkTextColor
-          text-decoration none
 
-          &.focused
-            color $primary
+          &:hover
+            border 1px solid $border
+            box-shadow 0 0 5px $primary
+
+        .suggestions
+          border 1px solid $darkBorderColor
+          top 40px
+          right 0
+
+          a
+            color $darkTextColor
+            text-decoration none
+
+            &.focused
+              color $primary
+
+  .mobile-nav-item
+    padding 10px 0
+    list-style none
+
+    a
+      text-decoration none
+
+  .mobile-menu-wrapper
+    max-height 0
+    overflow hidden
+    transition 0.3s ease
+    background-color $bgHeader
+
+  .mobile-menu-wrapper.open
+    max-height 450px
+    transition 0.3s ease
+
+
+.hamburger
+  display none
+  margin-right 1rem
+  width 2rem
+  height 2rem
+  transition color 0.3s
+
+  &:hover
+    cursor pointer
+    color $primary
 
 @media (min-width: $MQMobile)
   .nav-item > a:not(.external)
@@ -165,12 +196,24 @@ export default {
       opacity: 1
 
 @media (max-width: $MQMobile)
-  #header
+  .img-link, .hidden
     display none
 
-  .header-wrapper
-    flex-direction column
+  .link-title
+    font-size 30px
 
-    .header-right-wrap
-      display none
+  .search-box
+    margin-right 1rem
+
+    input
+      left 0
+
+  .hamburger
+    display block
+
+  .site-header
+    .header-content
+      .header-content_right
+        .nav
+          display none
 </style>
