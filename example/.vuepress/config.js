@@ -1,6 +1,7 @@
 module.exports = {
   //title: 'Blog Example',
   //description: 'This is a blog example built by VuePress',
+  port: 8081,
   theme: require.resolve('../../'),
   themeConfig: {
     /**
@@ -191,9 +192,9 @@ module.exports = {
     /**
      * Ref: https://ajwi.github.io/aj-theme-blog_vuepress/config/#feed
      */
-    //feed: {
-    //  canonical_base: 'https://tudominio.com/',
-    //},
+    feed: {
+      canonical_base: 'https://tudominio.com/',
+    },
     /**
      * Ref: https://ajwi.github.io/aj-theme-blog_vuepress/config/#resumen-summary
      */
