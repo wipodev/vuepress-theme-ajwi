@@ -2,7 +2,7 @@
   <div class="cover-container">
     <div class="cover-img">
       <img v-if="cover.img !== 'Blog'" :src="cover.img" :alt="cover.title" />
-      <SocialImg v-else :img="cover.img" />
+      <DefaultImg v-else :img="cover.img" />
     </div>
     <div class="cover-content">
       <h1>{{ cover.title }}</h1>
@@ -13,11 +13,11 @@
 </template>
 
 <script>
-import SocialImg from '@theme/components/SocialImg.vue'
+import DefaultImg from '@theme/components/DefaultImg.vue'
 
 export default {
   components: {
-    SocialImg,
+    DefaultImg,
   },
   computed: {
     cover() {
