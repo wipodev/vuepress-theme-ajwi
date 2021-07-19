@@ -1,34 +1,38 @@
 <template>
   <header class="site-header">
-    <nav class="site-header_nav">
-      <h1>
-        <router-link to="/">Blog Example</router-link>
-      </h1>
-      <SearchBox ref="search" />
-      <BtnMenu />
-      <Feed v-if="$themeConfig.feed" />
+    <nav class="header-nav">
+      <section class="header-left">
+        <div class="header-image">
+          <router-link to="/">
+            <img
+              v-if="$themeConfig.logo !== 'Logo'"
+              :src="$themeConfig.logo"
+              :alt="$site.title || 'AJ-Wi'"
+            />
+            <DefaultImg v-else :img="$themeConfig.logo" />
+          </router-link>
+        </div>
+        <router-link to="/">
+          <h1 class="site-title">
+            {{ $site.title || "Blog Example" }}
+          </h1>
+        </router-link>
+      </section>
+      <section class="header-right">
+        <nav class="site-nav"></nav>
+        <div class="site-search"></div>
+        <div class="feed"></div>
+      </section>
     </nav>
   </header>
 </template>
 
 <script>
-import BtnMenu from "@theme/components/BtnMenu.vue";
-import SearchBox from "@SearchBox";
-import Feed from "./Feed";
+import DefaultImg from "@theme/components/DefaultImg.vue";
 
 export default {
   components: {
-    BtnMenu,
-    SearchBox,
-    Feed,
-  },
-  data() {
-    return {
-      pepe: false,
-    };
-  },
-  updated() {
-    console.log(this.$refs.search.focused);
+    DefaultImg,
   },
 };
 </script>
@@ -36,11 +40,11 @@ export default {
 <style lang="stylus">
 .site-header
   background-color $bgHeader
-  padding 0 15px
-  display flex
   position sticky
   top 0
-  z-index 9
+  z-index 10
+  display grid
+  place-content center
 
   &::after
     content ""
@@ -53,52 +57,21 @@ export default {
       $borderGradient
     )
 
-  .site-header_nav
+  .header-nav
+    display flex
+    justify-content space-between
     width 100%
-    display grid
-    grid-template-columns 1fr 42px 40px
-    gap 15px
-    align-content center
+    max-width 1140px
 
-    h1
-      a
+    .header-left
+      display flex
+
+      .header-image
+        width 90px
+
+      .site-title
         color $primary
 
-    .search-box
-      justify-self end
-
-      input
-        border-radius 5px
-        transition all 0.5s
-        border 2px solid $primary
-        color $darkTextColor
-        left 0
-
-        &:hover
-          box-shadow 3px 3px 5px $primary
-
-        &:focus > .site-header_nav h1
-          font-size 0.9rem
-
-      .suggestions
-        border 1px solid $darkBorderColor
-        top 40px
-        right 0
-
-        a
-          color $darkTextColor
-          text-decoration none
-
-          &.focused
-            color $primary
-
-    .feed
-      display none
-
-    @media (min-width $MQMobile)
-      .hamburger
-        display none
-
-      .feed
-        display flex
+    .header-right
+      display flex
 </style>
