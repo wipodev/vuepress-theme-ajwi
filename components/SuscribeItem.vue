@@ -1,7 +1,7 @@
 <template>
   <div class="suscribe-item">
     <img v-if="img !== 'default'" :src="img" :alt="title" />
-    <SocialImg v-else :img="title" />
+    <DefaultImg v-else :img="title" />
     <h3 class="suscribe-title">{{ title }}</h3>
     <BaseButtom :url="route" />
   </div>
@@ -9,12 +9,12 @@
 
 <script>
 import BaseButtom from '@theme/components/BaseButtom.vue'
-import SocialImg from '@theme/components/SocialImg.vue'
+import DefaultImg from '@theme/components/DefaultImg.vue'
 
 export default {
   components: {
     BaseButtom,
-    SocialImg,
+    DefaultImg,
   },
   props: {
     title: {

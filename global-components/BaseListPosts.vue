@@ -161,10 +161,6 @@ export default {
 </script>
 
 <style lang="stylus">
-.common-layout
-  .content-wrapper
-    padding-bottom 80px
-
 #base-list-layout
   background-color $bgPosts
   text-align center
