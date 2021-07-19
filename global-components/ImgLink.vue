@@ -1,11 +1,15 @@
 <template>
   <router-link :to="link" class="img-link">
-    <img :src="img" :alt="alt" />
+    <img v-if="img !== 'Logo'" :src="img" :alt="alt" />
+    <DefaultImg v-else :img="img" />
   </router-link>
 </template>
 
 <script>
+import DefaultImg from '@theme/components/DefaultImg.vue'
+
 export default {
+  components: { DefaultImg },
   props: {
     link: {
       type: String,
