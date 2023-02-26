@@ -1,0 +1,113 @@
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="720" height="745" version="1.1" viewBox="0 0 190.5 197.11" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <linearGradient id="linearGradient118176" x1="95.25" x2="-15.136" y1="21.167" y2="21.069" gradientTransform="matrix(2 0 0 1 0 -.42668)" gradientUnits="userSpaceOnUse">
+   <stop offset="0"/>
+   <stop stop-color="#ec5033" offset="1"/>
+  </linearGradient>
+ </defs>
+ <g>
+  <rect width="190.5" height="21.167" fill="#13171a" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-width=".65675"/>
+  <text x="135.6673" y="12.471595" fill="#ec5033" font-family="sans-serif" font-size="4.6472px" stroke-width=".31686" style="line-height:1.25" xml:space="preserve"><tspan x="135.6673" y="12.471595" fill="#ec5033" stroke-width=".31686">Home</tspan></text>
+  <text x="153.21066" y="12.467289" fill="#e9e9e9" font-family="sans-serif" font-size="4.9514px" stroke-width=".33759" style="line-height:1.25" xml:space="preserve"><tspan x="153.21066" y="12.467289" fill="#e9e9e9" stroke-width=".33759">Posts</tspan></text>
+  <g>
+   <path d="m135.14 13.584h14.345" fill="#ec5033" stroke="#ec5033" stroke-width=".52917"/>
+   <path d="m0 20.74h190.5" stroke="url(#linearGradient118176)" stroke-width="1.4967"/>
+   <rect x="168.59" y="6.8209" width="12.685" height="7.6896" ry="1.245" fill="#e9e9e9" fill-rule="evenodd" stroke="#ec5033" stroke-linecap="round" stroke-linejoin="round" stroke-width=".505"/>
+  </g>
+ </g>
+ <g transform="translate(102.03 .60668)">
+  <ellipse cx="68.743" cy="8.6232" rx="1.5264" ry="1.5088" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width=".42004"/>
+  <rect transform="matrix(.56355 .82608 -.80948 .58715 0 0)" x="48.748" y="-52.102" width="4.4429" height=".41377" ry=".20688" fill-rule="evenodd"/>
+ </g>
+ <g>
+  <text transform="scale(.99477 1.0053)" x="9.2219553" y="12.362294" fill="#ec5033" font-family="sans-serif" font-size="6.7446px" font-weight="bold" stroke-width=".45986" style="line-height:1.25" xml:space="preserve"><tspan x="9.2219553" y="12.362294" fill="#ec5033" font-family="sans-serif" font-weight="bold" stroke-width=".45986">Blog example</tspan></text>
+  <rect y="21.167" width="190.5" height="155.05" ry="0" fill="#1b2025" fill-rule="evenodd"/>
+  <text x="66.285065" y="73.111801" fill="#ec5033" font-family="sans-serif" font-size="7.4453px" stroke-width=".50763" style="line-height:1.25" xml:space="preserve"><tspan x="66.285065" y="73.111801" fill="#ec5033" font-family="sans-serif" font-weight="bold" stroke-width=".50763">Ultimos Posts</tspan></text>
+  <rect y="176.21" width="190.5" height="21.167" fill="#13171a" fill-rule="evenodd"/>
+ </g>
+ <path d="m0 176.21h190.5" fill="none" stroke="#333" stroke-width=".37418px"/>
+ <g transform="translate(52.312 28.575)" fill="none" stroke="#ea5033" stroke-linecap="round" stroke-linejoin="round">
+  <g transform="translate(8.2859e-7 -.66325)">
+   <rect x="19.824" y="150.93" width="9.3349" height="5.3245" ry="1.7689" stroke-width=".505"/>
+   <path transform="matrix(.26458 0 0 .26458 1.1745 .83388)" d="m91.737 576.8-8.5091 4.421 0.42582-9.5796z" stroke-width="1.9087"/>
+  </g>
+  <ellipse cx="37.406" cy="153.03" rx="2.8171" ry="2.7609" stroke-width=".505"/>
+  <g transform="translate(25.828 -.66325)">
+   <rect x="19.824" y="150.93" width="9.3349" height="5.3245" ry="1.7689" stroke-width=".505"/>
+   <path transform="matrix(.26458 0 0 .26458 1.1745 .83388)" d="m91.737 576.8-8.5091 4.421 0.42582-9.5796z" stroke-width="1.9087"/>
+  </g>
+  <ellipse cx="63.235" cy="153.03" rx="2.8171" ry="2.7609" stroke-width=".505"/>
+ </g>
+ <text transform="scale(1.1012 .90807)" x="74.795761" y="207.88095" fill="#333333" font-family="sans-serif" font-size="3.3988px" stroke-width=".23174" style="line-height:1.25" xml:space="preserve"><tspan x="74.795761" y="207.88095" fill="#333333" stroke-width=".23174">Privacy Policy</tspan></text>
+ <text transform="scale(.93351 1.0712)" x="62.827145" y="180.96045" fill="#333333" font-family="sans-serif" font-size="3.3335px" stroke-width=".22728" style="line-height:1.25" xml:space="preserve"><tspan x="62.827145" y="180.96045" fill="#333333" stroke-width=".22728">MIT Licensed | Copyright © 2018-present AJ-Wi</tspan></text>
+ <g transform="translate(0 46.038)">
+  <rect x="7.9375" y="34.968" width="79.375" height="42.333" fill="#111" fill-rule="evenodd"/>
+  <g fill="#e9e9e9" font-family="sans-serif">
+   <text x="11.10031" y="42.569649" font-size="6.5161px" font-weight="bold" stroke-width=".44428" style="line-height:1.25" xml:space="preserve"><tspan x="11.10031" y="42.569649" fill="#e9e9e9" font-family="sans-serif" font-weight="bold" stroke-width=".44428">Titulo del articulo</tspan></text>
+   <text transform="scale(1.0426 .95915)" x="10.434359" y="51.811089" font-size="4.0458px" stroke-width=".27585" style="line-height:1.25" xml:space="preserve"><tspan x="10.434359" y="51.811089">Resumen del articulo: lo que esta </tspan><tspan x="10.434359" y="56.868389">aqui escrito es solo un pequeño </tspan><tspan x="10.434359" y="61.92569">resumen del articulo referenciando</tspan><tspan x="10.434359" y="66.982986">al titulo del articulo.</tspan></text>
+   <text x="10.899817" y="69.433731" font-size="2.367px" stroke-width=".16139" style="line-height:1.25" xml:space="preserve"><tspan x="10.899817" y="69.433731" fill="#e9e9e9" stroke-width=".16139">Lunes,15 de junio del 2021</tspan></text>
+   <g font-size="2.9734px" stroke-width=".20273">
+    <text transform="scale(1.0174 .98289)" x="20.737722" y="76.352867" style="line-height:1.25" xml:space="preserve"><tspan x="20.737722" y="76.352867" fill="#e9e9e9" stroke-width=".20273">tag</tspan></text>
+    <text transform="scale(1.0174 .98289)" x="27.499216" y="76.352867" style="line-height:1.25" xml:space="preserve"><tspan x="27.499216" y="76.352867" fill="#e9e9e9" stroke-width=".20273">tag</tspan></text>
+    <text transform="scale(1.0174 .98289)" x="35.300938" y="76.352867" style="line-height:1.25" xml:space="preserve"><tspan x="35.300938" y="76.352867" fill="#e9e9e9" stroke-width=".20273">tag</tspan></text>
+   </g>
+  </g>
+  <path d="m11.273 73.774 1.572-1.67 7.2027-0.01263 0.03557 3.2847-7.1904 0.05109z" color="#000000" fill="#e9e9e9" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-width=".62412" style="-inkscape-stroke:none"/>
+  <circle cx="12.342" cy="73.759" r=".26458" fill="#13171a" fill-rule="evenodd"/>
+  <text transform="scale(1.0573 .94576)" x="13.158018" y="78.561188" fill="#808080" font-family="sans-serif" font-size="2.1643px" stroke-width=".14757" style="line-height:1.25" xml:space="preserve"><tspan x="13.158018" y="78.561188" fill="#808080" stroke-width=".14757">tags</tspan></text>
+ </g>
+ <g transform="translate(92.534 46.038)">
+  <rect x="7.9375" y="34.968" width="79.375" height="42.333" fill="#111" fill-rule="evenodd"/>
+  <g fill="#e9e9e9" font-family="sans-serif">
+   <text x="11.10031" y="42.569649" font-size="6.5161px" font-weight="bold" stroke-width=".44428" style="line-height:1.25" xml:space="preserve"><tspan x="11.10031" y="42.569649" fill="#e9e9e9" font-family="sans-serif" font-weight="bold" stroke-width=".44428">Titulo del articulo</tspan></text>
+   <text transform="scale(1.0426 .95915)" x="10.434359" y="51.811089" font-size="4.0458px" stroke-width=".27585" style="line-height:1.25" xml:space="preserve"><tspan x="10.434359" y="51.811089">Resumen del articulo: lo que esta </tspan><tspan x="10.434359" y="56.868389">aqui escrito es solo un pequeño </tspan><tspan x="10.434359" y="61.92569">resumen del articulo referenciando</tspan><tspan x="10.434359" y="66.982986">al titulo del articulo.</tspan></text>
+   <text x="10.899817" y="69.433731" font-size="2.367px" stroke-width=".16139" style="line-height:1.25" xml:space="preserve"><tspan x="10.899817" y="69.433731" fill="#e9e9e9" stroke-width=".16139">Lunes,15 de junio del 2021</tspan></text>
+   <g font-size="2.9734px" stroke-width=".20273">
+    <text transform="scale(1.0174 .98289)" x="20.737722" y="76.352867" style="line-height:1.25" xml:space="preserve"><tspan x="20.737722" y="76.352867" fill="#e9e9e9" stroke-width=".20273">tag</tspan></text>
+    <text transform="scale(1.0174 .98289)" x="27.499216" y="76.352867" style="line-height:1.25" xml:space="preserve"><tspan x="27.499216" y="76.352867" fill="#e9e9e9" stroke-width=".20273">tag</tspan></text>
+    <text transform="scale(1.0174 .98289)" x="35.300938" y="76.352867" style="line-height:1.25" xml:space="preserve"><tspan x="35.300938" y="76.352867" fill="#e9e9e9" stroke-width=".20273">tag</tspan></text>
+   </g>
+  </g>
+  <path d="m11.273 73.774 1.572-1.67 7.2027-0.01263 0.03557 3.2847-7.1904 0.05109z" color="#000000" fill="#e9e9e9" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-width=".62412" style="-inkscape-stroke:none"/>
+  <circle cx="12.342" cy="73.759" r=".26458" fill="#13171a" fill-rule="evenodd"/>
+  <text transform="scale(1.0573 .94576)" x="13.158018" y="78.561188" fill="#808080" font-family="sans-serif" font-size="2.1643px" stroke-width=".14757" style="line-height:1.25" xml:space="preserve"><tspan x="13.158018" y="78.561188" fill="#808080" stroke-width=".14757">tags</tspan></text>
+ </g>
+ <g transform="translate(0 93.663)">
+  <rect x="7.9375" y="34.968" width="79.375" height="42.333" fill="#111" fill-rule="evenodd"/>
+  <g fill="#e9e9e9" font-family="sans-serif">
+   <text x="11.10031" y="42.569649" font-size="6.5161px" font-weight="bold" stroke-width=".44428" style="line-height:1.25" xml:space="preserve"><tspan x="11.10031" y="42.569649" fill="#e9e9e9" font-family="sans-serif" font-weight="bold" stroke-width=".44428">Titulo del articulo</tspan></text>
+   <text transform="scale(1.0426 .95915)" x="10.434359" y="51.811089" font-size="4.0458px" stroke-width=".27585" style="line-height:1.25" xml:space="preserve"><tspan x="10.434359" y="51.811089">Resumen del articulo: lo que esta </tspan><tspan x="10.434359" y="56.868389">aqui escrito es solo un pequeño </tspan><tspan x="10.434359" y="61.92569">resumen del articulo referenciando</tspan><tspan x="10.434359" y="66.982986">al titulo del articulo.</tspan></text>
+   <text x="10.899817" y="69.433731" font-size="2.367px" stroke-width=".16139" style="line-height:1.25" xml:space="preserve"><tspan x="10.899817" y="69.433731" fill="#e9e9e9" stroke-width=".16139">Lunes,15 de junio del 2021</tspan></text>
+   <g font-size="2.9734px" stroke-width=".20273">
+    <text transform="scale(1.0174 .98289)" x="20.737722" y="76.352867" style="line-height:1.25" xml:space="preserve"><tspan x="20.737722" y="76.352867" fill="#e9e9e9" stroke-width=".20273">tag</tspan></text>
+    <text transform="scale(1.0174 .98289)" x="27.499216" y="76.352867" style="line-height:1.25" xml:space="preserve"><tspan x="27.499216" y="76.352867" fill="#e9e9e9" stroke-width=".20273">tag</tspan></text>
+    <text transform="scale(1.0174 .98289)" x="35.300938" y="76.352867" style="line-height:1.25" xml:space="preserve"><tspan x="35.300938" y="76.352867" fill="#e9e9e9" stroke-width=".20273">tag</tspan></text>
+   </g>
+  </g>
+  <path d="m11.273 73.774 1.572-1.67 7.2027-0.01263 0.03557 3.2847-7.1904 0.05109z" color="#000000" fill="#e9e9e9" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-width=".62412" style="-inkscape-stroke:none"/>
+  <circle cx="12.342" cy="73.759" r=".26458" fill="#13171a" fill-rule="evenodd"/>
+  <text transform="scale(1.0573 .94576)" x="13.158018" y="78.561188" fill="#808080" font-family="sans-serif" font-size="2.1643px" stroke-width=".14757" style="line-height:1.25" xml:space="preserve"><tspan x="13.158018" y="78.561188" fill="#808080" stroke-width=".14757">tags</tspan></text>
+ </g>
+ <g transform="translate(92.534 93.663)">
+  <rect x="7.9375" y="34.968" width="79.375" height="42.333" fill="#111" fill-rule="evenodd"/>
+  <g fill="#e9e9e9" font-family="sans-serif">
+   <text x="11.10031" y="42.569649" font-size="6.5161px" font-weight="bold" stroke-width=".44428" style="line-height:1.25" xml:space="preserve"><tspan x="11.10031" y="42.569649" fill="#e9e9e9" font-family="sans-serif" font-weight="bold" stroke-width=".44428">Titulo del articulo</tspan></text>
+   <text transform="scale(1.0426 .95915)" x="10.434359" y="51.811089" font-size="4.0458px" stroke-width=".27585" style="line-height:1.25" xml:space="preserve"><tspan x="10.434359" y="51.811089">Resumen del articulo: lo que esta </tspan><tspan x="10.434359" y="56.868389">aqui escrito es solo un pequeño </tspan><tspan x="10.434359" y="61.92569">resumen del articulo referenciando</tspan><tspan x="10.434359" y="66.982986">al titulo del articulo.</tspan></text>
+   <text x="10.899817" y="69.433731" font-size="2.367px" stroke-width=".16139" style="line-height:1.25" xml:space="preserve"><tspan x="10.899817" y="69.433731" fill="#e9e9e9" stroke-width=".16139">Lunes,15 de junio del 2021</tspan></text>
+   <g font-size="2.9734px" stroke-width=".20273">
+    <text transform="scale(1.0174 .98289)" x="20.737722" y="76.352867" style="line-height:1.25" xml:space="preserve"><tspan x="20.737722" y="76.352867" fill="#e9e9e9" stroke-width=".20273">tag</tspan></text>
+    <text transform="scale(1.0174 .98289)" x="27.499216" y="76.352867" style="line-height:1.25" xml:space="preserve"><tspan x="27.499216" y="76.352867" fill="#e9e9e9" stroke-width=".20273">tag</tspan></text>
+    <text transform="scale(1.0174 .98289)" x="35.300938" y="76.352867" style="line-height:1.25" xml:space="preserve"><tspan x="35.300938" y="76.352867" fill="#e9e9e9" stroke-width=".20273">tag</tspan></text>
+   </g>
+  </g>
+  <path d="m11.273 73.774 1.572-1.67 7.2027-0.01263 0.03557 3.2847-7.1904 0.05109z" color="#000000" fill="#e9e9e9" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-width=".62412" style="-inkscape-stroke:none"/>
+  <circle cx="12.342" cy="73.759" r=".26458" fill="#13171a" fill-rule="evenodd"/>
+  <text transform="scale(1.0573 .94576)" x="13.158018" y="78.561188" fill="#808080" font-family="sans-serif" font-size="2.1643px" stroke-width=".14757" style="line-height:1.25" xml:space="preserve"><tspan x="13.158018" y="78.561188" fill="#808080" stroke-width=".14757">tags</tspan></text>
+ </g>
+ <path d="m8.2583 76.363h171.18" fill="none" stroke="#e9e9e9" stroke-width=".26458"/>
+ <rect x="-2.7756e-17" y="21.295" width="190.5" height="42.333" fill="#ec5033" fill-rule="evenodd"/>
+ <path d="m41.442 24.649c-2.8652-7.84e-4 -4.7105 0.03694-5.2673 0.11062-2.9657 0.39234-5.3263 2.5512-6.1163 5.5927-0.26035 1.0023-0.27633 1.664-0.27633 11.624 0 11.632-0.01805 11.362 0.90084 13.19 0.95064 1.8905 3.2177 3.6016 5.1427 3.8816v5.23e-4c1.1715 0.17024 20.971 0.17115 22.069 7.83e-4 2.3962-0.37137 4.7022-2.3081 5.5974-4.7006 0.49001-1.3097 0.58343-2.7158 0.54002-8.1333l-0.04154-5.1636-2.6534-0.07191-2.6534-0.07149-0.08401-5.0205c-0.08808-5.2488-0.11754-5.6029-0.58719-7.0709-0.57601-1.8005-2.1712-3.0391-4.851-3.7667-1.1836-0.32143-1.4322-0.33274-8.5242-0.38693-1.1716-0.0094-2.2399-0.01327-3.195-0.01358zm3.1073 9.0149c6.7381 0 6.7094-0.0031 7.2628 0.81727 0.37455 0.55548 0.38176 2.2463 0.0117 2.7944-0.6283 0.93056-0.43149 0.9046-6.9813 0.92651-3.2739 0.01097-6.1088-0.01146-6.3002-0.04946-0.51542-0.10228-1.0021-0.46322-1.2369-0.91716-0.28947-0.55979-0.27343-2.1974 0.02661-2.7053 0.51796-0.87681 0.43044-0.86629 7.2174-0.86629zm2.8033 12.98c8.501 0 9.0588 0.01585 9.4205 0.26137 0.66627 0.45225 0.88987 0.94197 0.89431 1.9618 0.0031 0.61855-0.08015 1.0884-0.24551 1.3961-0.49981 0.92975-0.14831 0.89896-10.222 0.89896h-9.1319l-0.55684-0.55684c-0.54391-0.54391-0.55684-0.58102-0.55684-1.5916 0-1.1774 0.21771-1.6764 0.91578-2.099 0.42514-0.25738 0.88329-0.27072 9.4829-0.27072z" fill="#fff" stroke-width=".26116"/>
+ <text x="100.8273" y="34.103489" fill="#e9e9e9" font-family="sans-serif" font-size="9.8186px" font-weight="bold" stroke-width=".66945" style="line-height:1.25" xml:space="preserve"><tspan x="100.8273" y="34.103489">Bienvenidos</tspan><tspan x="100.8273" y="46.376801">a mi blog</tspan></text>
+ <text x="100.80988" y="56.990162" fill="#e9e9e9" font-family="sans-serif" font-size="4.7857px" font-weight="bold" stroke-width=".3263" style="line-height:1.25" xml:space="preserve"><tspan x="100.80988" y="56.990162" fill="#e9e9e9" font-family="sans-serif" font-weight="bold" stroke-width=".3263">El blog que estas buscando</tspan></text>
+</svg>
