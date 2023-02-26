@@ -9,11 +9,15 @@
     "deploy": "gh-pages -d docs/.vuepress/dist",
     "example:build": "vuepress build example --temp example/.temp",
     "example:dev": "vuepress dev example --temp example/.temp",
-    "lint": "eslint . --ext .js,.vue"
+    "lint": "eslint . --ext .js,.vue",
+    "dev-doc": "vitepress dev doc",
+    "build-doc": "vitepress build doc",
+    "preview-doc": "vitepress preview doc",
+    "deploy-doc": "gh-pages -d doc/.vitepress/dist"
   },
   "repository": {
     "type": "git",
-    "url": "aj-wi/aj-theme-blog_vuepress"
+    "url": "wipodev/vuepress-theme-ajwi"
   },
   "keywords": [
     "vue",
@@ -27,9 +31,9 @@
   "author": "aj-wi<ajwipo@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/aj-wi/aj-theme-blog_vuepress/issues"
+    "url": "https://github.com/wipodev/vuepress-theme-ajwi/issues"
   },
-  "homepage": "https://ajwi.github.io/aj-theme-blog_vuepress",
+  "homepage": "https://wipodev.com/vuepress-theme-ajwi/",
   "files": [
     "index.js",
     "styles",
@@ -53,7 +57,9 @@
     "eslint-config-prettier": "^6.7.0",
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-vue": "^6.0.1",
-    "gh-pages": "^3.2.3",
-    "vuepress": "^1.8.2"
+    "gh-pages": "^5.0.0",
+    "vuepress": "^1.8.2",
+    "vitepress": "^1.0.0-alpha.45",
+    "vue": "^3.2.47"
   }
 }

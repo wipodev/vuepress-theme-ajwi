@@ -2,4 +2,5 @@ node_modules
 .vscode
 .temp
 dist
+cache
 yarn-error.log
