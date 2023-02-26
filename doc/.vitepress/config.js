@@ -3,6 +3,7 @@ export default {
   titleTemplate: 'WipoDev | :title',
   description: 'Custom theme to get a blog using VuePress.',
   lastUpdated: true,
+  ignoreDeadLinks: true,
   base: '/vuepress-theme-ajwi/',
   head: [
     [
