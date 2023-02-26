@@ -90,7 +90,7 @@ Agregue los scripts al archivo package.json:
 
 La carpeta \_posts es donde se encuentran las publicaciones de tu blog. Simplemente puede escribir publicaciones de blog en Markdown.
 
-Todos los archivos de publicaciones de blog deben contener un encabezado con información descriptiva de la publicación en forma de variables, este encabezado lo llamaremos de aquí en adelante `frontmatter`. Solo `title` es obligatorio, pero le recomendamos que defina todas las variables de frontmatter como se muestra a continuación. Se utilizarán para establecer el diseño correspondiente. Consulte [frontmatter](/es/config/front-matter/) para obtener más detalles. He aquí un ejemplo:
+Todos los archivos de publicaciones de blog deben contener un encabezado con información descriptiva de la publicación en forma de variables, este encabezado lo llamaremos de aquí en adelante `frontmatter`. Solo `title` es obligatorio, pero le recomendamos que defina todas las variables de frontmatter como se muestra a continuación. Se utilizarán para establecer el diseño correspondiente. Consulte [frontmatter](/es/config/front-matter) para obtener más detalles. He aquí un ejemplo:
 
 ```yaml
 ---
@@ -132,7 +132,7 @@ location: Lima
 
 De forma predeterminada, el resumen se extraerá de las publicaciones de blog. Si necesita anularlo, presentamos los siguientes dos enfoques:
 
-1. [Escribir el resumen manualmente en frontmatter](/front-matter/#resumen)
+1. [Escribir el resumen manualmente en frontmatter](/es/config/front-matter#resumen-summary)
 
 2. [Configurar el separador de extractos escribiendo un comentario `<!-- more -->` justo debajo de lo que desea extraer como resumen](https://vuepress.vuejs.org/theme/writing-a-theme.html#content-excerpt)
 

@@ -90,7 +90,7 @@ From now on, you can run `npm run dev` or `yarn dev` and go in your browser to `
 
 The \_posts folder is where your blog posts are located. You can simply write blog posts in Markdown.
 
-All blog post files must contain a header with descriptive information about the post in the form of variables, we will call this header hereafter `frontmatter`. Only `title` is required, but we recommend that you define all frontmatter variables as shown below. They will be used to establish the corresponding layout. See [frontmatter](/config/front-matter/) for more details. Here's an example:
+All blog post files must contain a header with descriptive information about the post in the form of variables, we will call this header hereafter `frontmatter`. Only `title` is required, but we recommend that you define all frontmatter variables as shown below. They will be used to establish the corresponding layout. See [frontmatter](/config/front-matter) for more details. Here's an example:
 
 ```yaml
 ---
@@ -132,7 +132,7 @@ location: Lima
 
 By default, the summary will be pulled from blog posts. If you need to override it, we present the following two approaches:
 
-1. [Write summary manually in frontmatter](/front-matter/#resumen)
+1. [Write summary manually in frontmatter](/config/front-matter/#summary)
 
 2. [Set up the excerpt separator by writing a comment `<!-- more -->` just below what you want to extract as an abstract](https://vuepress.vuejs.org/theme/writing-a-theme.html#content-excerpt)
 

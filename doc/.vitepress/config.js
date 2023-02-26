@@ -55,6 +55,7 @@ export default {
       lan: 'es',
       link: '/es/',
       themeConfig: {
+        lastUpdatedText: 'Ultima Actualización',
         nav: [
           { text: 'Inicio', link: 'https://wipodev.com/es/' },
           { text: 'Tema VuePress', link: '/es/' },
